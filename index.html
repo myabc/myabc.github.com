@@ -1,11 +1,13 @@
-<html>
+---
+layout: default
+---
 
- <head>
-   <title>myabc.github.com</title>
- </head>
-
- <body>
     <h1>myabc.github.com</h1>
- </body>
 
-</html>
+{% for post in site.posts offset: 0 limit: 5 %}
+
+<h1><a href="{{ post.id }}.html">{{ post.title }}</a></h1>
+
+<p>{{ post.content | strip_html | truncatewords: 35 }}</p>
+
+{% endfor %}
