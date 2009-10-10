@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Using Flock"
-author: admin
+author: myabc
 ---
 
- 
+
 For the first two posts on this blog I used the WordPress editor through my browser. Despite following certain Internet trends closely, I am not at all au fait with blogging. I did remember though that there were some external editors available. Trying them out might encourage me to blog more often.
 
 A couple months ago I downloaded <a href="http://www.flock.com">Flock</a>. I had read a couple <a href="http://news.bbc.co.uk/1/hi/technology/4406204.stm">articles</a> about it, and I wanted to see what all the hype was about. My first impression was that I liked the look and feel a lot, but because I didn't feel any need for the 'value added' features (which is the raison d'être of this browser) I haven't opened it since my first install.

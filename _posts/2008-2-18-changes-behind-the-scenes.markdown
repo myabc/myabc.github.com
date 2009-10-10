@@ -4,7 +4,7 @@ title: "Changes behind the scenes"
 author: myabc
 ---
 
- 
+
 I do realise I spend more time blogging about blogging, than actually blogging.
 
 I spent a couple hours moving away from [WordPress](http://wordpress.org/), which was the blogging software this site has used since its inception a couple years ago. I moved to [Chyrp](http://chyrp.net/), a new lightweight blogging engine written in PHP. Admittedly, some of this is the thrill of the new. I do like to be current. And some of this was procrastination from other tasks at hand. &#xD;

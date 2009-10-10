@@ -4,7 +4,7 @@ title: "New Year, New Start and Finish"
 author: myabc
 ---
 
- 
+
 I have a constant stream of ideas, but I do have to admit to finding it hard to finish things. My lack of content on this blog is rather indicative of some of the difficulties, not with picking up the (metaphorical) pen, but with laying it to rest, adding a full stop, and closing the paragraph.
 
 While I've liked the idea of having a blog, its not something I have really put to use. A blog, it seems, is something is pretty much expected for those making their living in the technology industry. In my case though I am told that this blog is bordering on 'pitiful' for its lack of content (the words, nonetheless, of one of my closest friends). Instead it has become more of a 'metablog' with me blogging on blogging, and offering my excuses for not writing more often.

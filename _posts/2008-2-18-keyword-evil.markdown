@@ -4,7 +4,7 @@ title: "Keyword: Evil"
 author: myabc
 ---
 
- 
+
 <http://harpers.org/media/slideshow/annot/2008-03/index.html>
 
 There is an great feature in this month's Harper's Magazine on Google's Data Centre plans for a small community on the banks of the Columbia River in Oregon. I think its really easy to see technology as something invisible: after all, thats why Google searches, Gmail and YouTube are so popular.

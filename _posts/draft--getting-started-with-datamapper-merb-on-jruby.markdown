@@ -4,7 +4,7 @@ title: "Getting Started with DataMapper on JRuby"
 author: myabc
 ---
 
- 
+
 DataMapper + Merb on JRuby Getting Started
 ------------------------------------------
 
@@ -61,9 +61,9 @@ asdfa
 
     http://github.com/snusnu/merb/commits/dm-0.10.0
 
-    git clone git://github.com/snusnu/merb.git merb-snusnu 
+    git clone git://github.com/snusnu/merb.git merb-snusnu
     && cd merb-snusnu
-    && 
+    &&
     git checkout -b dm-0.10.0 --track origin/dm-0.10.0
     jruby -S rake install
 
