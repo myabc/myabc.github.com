@@ -2,6 +2,7 @@
 layout: post
 title: "Joining the bandwagon"
 author: myabc
+categories: code
 ---
 
 

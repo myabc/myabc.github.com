@@ -2,6 +2,7 @@
 layout: post
 title: "The Hazards of Online Translation"
 author: myabc
+categories: me
 ---
 
 

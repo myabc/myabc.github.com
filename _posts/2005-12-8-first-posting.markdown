@@ -2,6 +2,7 @@
 layout: post
 title: "First Posting"
 author: myabc
+categories: me
 ---
 
 

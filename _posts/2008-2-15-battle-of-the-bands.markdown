@@ -2,6 +2,7 @@
 layout: post
 title: "Battle of the Bands"
 author: myabc
+categories: me
 ---
 
 

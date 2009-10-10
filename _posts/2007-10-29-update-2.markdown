@@ -2,6 +2,7 @@
 layout: post
 title: "Update 2"
 author: myabc
+categories: me
 ---
 
 

@@ -2,6 +2,7 @@
 layout: post
 title: "A prime explanation of subprime"
 author: myabc
+categories: me
 ---
 
 

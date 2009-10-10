@@ -2,6 +2,7 @@
 layout: post
 title: "Blog back up and running..."
 author: myabc
+categories: me
 ---
 
 

@@ -2,6 +2,7 @@
 layout: post
 title: "Getting Started with DataMapper on JRuby"
 author: myabc
+categories: code
 ---
 
 

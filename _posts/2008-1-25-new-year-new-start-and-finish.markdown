@@ -2,6 +2,7 @@
 layout: post
 title: "New Year, New Start and Finish"
 author: myabc
+categories: me
 ---
 
 

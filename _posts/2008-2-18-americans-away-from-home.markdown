@@ -2,6 +2,7 @@
 layout: post
 title: "Americans Away from Home"
 author: myabc
+categories: me
 ---
 
 

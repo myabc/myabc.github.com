@@ -2,6 +2,7 @@
 layout: post
 title: "Changes behind the scenes"
 author: myabc
+categories: me
 ---
 
 

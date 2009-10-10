@@ -2,6 +2,7 @@
 layout: post
 title: "Where in the World?"
 author: myabc
+categories: me
 ---
 
 

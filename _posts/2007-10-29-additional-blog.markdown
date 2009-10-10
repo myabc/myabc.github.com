@@ -2,6 +2,7 @@
 layout: post
 title: "Additional Blog"
 author: myabc
+categories: me
 ---
 
 

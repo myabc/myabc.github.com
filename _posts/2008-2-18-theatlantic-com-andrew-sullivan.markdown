@@ -2,6 +2,7 @@
 layout: post
 title: "TheAtlantic.com | Andrew Sullivan"
 author: myabc
+categories: me
 ---
 
 
