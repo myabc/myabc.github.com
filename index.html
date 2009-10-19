@@ -5,7 +5,9 @@ title:  Various Musings
 
 {% for post in site.posts offset: 0 limit: 5 %}
 
-<h1><a href="{{ post.id }}.html">{{ post.title }}</a></h1>
+<h2><a href="{{ post.id }}.html">{{ post.title }}</a></h2>
+<p class="date">{{ post.date | date: "%d %b, %Y" }}</p>
+
 
 <p>{{ post.content | strip_html | truncatewords: 35 }}</p>
 

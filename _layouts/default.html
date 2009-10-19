@@ -42,9 +42,14 @@
     </div>
     <div id="sidebar">
       {% include about.html %}
-      <form method="get" id="sform" action="/search">
-        <label for="q">Search:</label>
-        <input type="text" id="q" value="" name="q" size="15" />
+
+      <form action="http://www.google.com/cse" id="cse-search-box">
+        <div>
+          <input type="hidden" name="cx" value="004211119241033965410:bbu9uuwp4m8" />
+          <input type="hidden" name="ie" value="UTF-8" />
+          <input type="text" id="q" name="q" size="15" />
+          <input type="submit" name="sa" value="Search" />
+        </div>
       </form>
 
       {% if site.page_sections %}

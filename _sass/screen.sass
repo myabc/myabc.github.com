@@ -5,7 +5,8 @@
 // Import all the default blueprint modules so that we can access their mixins.
 @import blueprint
 // Import the non-default scaffolding module.
-@import blueprint/modules/scaffolding.sass
+// @import blueprint/modules/scaffolding.sass
+@import blueprint/modules/colors.sass
 
 // To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
 // +blueprint
@@ -14,7 +15,7 @@
 
 //Recommended Blueprint configuration with scoping and semantic layout:
 +blueprint-typography("body.bp")
-+blueprint-scaffolding("body.bp")
+//+blueprint-scaffolding("body.bp")
 body.bp
   +blueprint-utilities
   +blueprint-debug
@@ -37,9 +38,10 @@ body.three-col
   #content
     // Two thirds of the grid columns, rounding up.
     // With 24 cols, this is 16.
-    !content_columns = ceil(2 * !blueprint_grid_columns / 3)
+    !content_columns = ceil(2 * !blueprint_grid_columns / 3) - 1
     // true means it's the last column in the row
     +column(!content_columns, true)
+    +append(1)
 
     .published
       background-color: #8C0327
