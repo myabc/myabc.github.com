@@ -9,6 +9,8 @@ title:  Various Musings
 <p class="date">{{ post.date | date: "%d %b, %Y" }}</p>
 
 
+{{ post.date | date: "%d %b, %Y"  }}
+
 <p>{{ post.content | strip_html | truncatewords: 35 }}</p>
 
 {% endfor %}

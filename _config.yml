@@ -1,2 +1,2 @@
-exclude:
-    
+auto:       true
+pygments:   true

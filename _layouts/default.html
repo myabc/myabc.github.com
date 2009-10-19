@@ -52,16 +52,6 @@
         </div>
       </form>
 
-      {% if site.page_sections %}
-        <h2>Pages</h2>
-        <ul>
-          {% for page in site.page_sections %}<li>{{ page | link_to_section }}</li>{% endfor %}
-        </ul>
-      {% endif %}
-      <h2>Categories</h2>
-      <ul>
-        {% for category in site.blog_sections %}<li>{{ category | link_to_section  }}</li>{% endfor %}
-      </ul>
       {% include links.html %}
       {% include github.html %}
       <div class="tweet"></div>
