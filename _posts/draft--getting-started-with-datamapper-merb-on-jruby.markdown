@@ -5,22 +5,32 @@ author: myabc
 categories: code
 ---
 
-DataMapper builds on top of DataObjects, an attempt to rewrite existing Ruby
-database drivers to conform to a standard interface. Late this Spring, tucked
-away in the DataObjects' Release Notes for version 0.9.12, was mention of support
-for JRuby.
+Underneath DataMapper (at least if you haven't bitten the #nosql bullet just
+yet) lies DataObjects. DataObjects is an attempt to rewrite existing Ruby
+database drivers to conform to one, standard interface. If you're a recent
+arrival from the world of PHP or .Net, then it the DO API will not look too
+disimilar to either PDO or ADO.net.
 
-Unfortunately the support that featured in 0.9.12 was incomplete at best. We
-needed a little longer to get things working well, but over the summer we made
-significant support in supporting a [large number of][readme] databases on the
-JRuby platform.
+Late this Spring, tucked away in the DataObjects' Release Notes for version
+0.9.12, was mention of support for JRuby. Unfortunately the support that
+featured in 0.9.12 was incomplete at best. We needed a little longer to get
+things working well, but over the summer we made significant support in
+supporting a [large number of][readme] databases on the JRuby platform.
 
-I've had a Gist up on GitHub for the last couple weeks, but promised to follow
-up with a more detailed tutorial on how to get up and running with DataMapper on
-JRuby.
+For a long while, I had a Gist up on Github illustrating the steps needed to get
+up and running with DataMapper on JRuby. I promised to follow up with a more
+detailed tutorial, but its taken some time to get it published. In part, this
+has been down to the fact that going through the process of writing a tutorial
+has helped me uncover a plethora of bugs and inconsistencies, and I wanted to
+take the time to deal with them before hitting the metaphorical "publish"
+button. In any case, I hope this will be the first of many future Ruby postings.
 
-For the purposes of this tutorial, I am using Merb as the MVC Framework, but you
-should also be able to use Rails, Camping, or Sinatra.
+For the purposes of this tutorial, I am using [Merb][merb] as the MVC Framework,
+but you should also be able to use Rails, Camping, or Sinatra.
+
+Many thanks to [Dan Kubb (dkubb)](http://twitter.com/dkubb) for looking over
+this post and to [George Adamson](http://twitter.com/GeorgeAdamson) for actually
+having the patience to test out these steps (on Windows, of all platforms!)
 
 Preflight
 ---------
@@ -29,8 +39,8 @@ Preflight
 
 If you are running a recent version of Mac OS X, you should already have both
 the Java Runtime Environment and Java Development Kit (JDK). Apple supplies
-their own set of Java tools (although the [Soylatte][soylatte] implementation
-is available if you want Java 6 on Tiger and Leopard 32-bit machines).
+their own set of Java tools (although the [Soylatte][soylatte] implementation is
+available if you want Java 6 on Tiger and Leopard 32-bit machines).
 
 On Windows or a Linux distribution, you will likely already have the Java
 Runtime Environment, but unless you've been doing Java development, you may be
@@ -39,11 +49,12 @@ without the JDK. The JDK is available from [Sun's Java downloads page][java-down
 ### Install JRuby
 
 We generally test against the latest stable version of JRuby. I've also tested
-against v1.2.0, but I'd recommend being on 1.3.1 or 1.4.0RC2. Installing JRuby
+against v1.2.0, but I'd recommend being on 1.3.1 or 1.4.0. Installing JRuby
 is as simple as downloading and decompressing the distributed `.zip`/`.tar.gz`
 file (or running the new `.exe` installer, if you're on Windows).
 
-Verbose installation instructions for JRuby are available on the [Data Objects' wiki][do-wiki].
+Verbose installation instructions for JRuby are now available on the
+[Data Objects' wiki][do-wiki].
 
 ### Configure your Path
 
@@ -76,7 +87,7 @@ to install them as follows:
     jruby -S gem install do_sqlite3 dm-core dm-more merb
 
 That's it! Unlike with ActiveRecord, you don't have to specify a separate JDBC
-version.
+variant.
 
 However, for the purpose of these instructions and because our JRuby support is
 still developing at a rapid pace (for instance new drivers are being made
@@ -101,7 +112,6 @@ We start by installing Extlib:
 
     git clone git://github.com/datamapper/extlib.git
     cd extlib
-    git checkout -b next --track origin/next
     jruby -S rake install
     cd ..
 
@@ -116,7 +126,6 @@ Then proceed to install DataObjects:
 
     git clone git://github.com/datamapper/do.git
     cd do
-    git checkout -b next --track origin/next
 
     cd data_objects
     jruby -S rake install
@@ -151,6 +160,8 @@ JDBC jar files as Gems for us. Installation should be a matter:
     jdbc-postgres
     jdbc-sqlite3
 
+    sudo jruby -S gem install jdbc-sqlite3
+
 If you're on *Oracle*, then you need to place the Oracle JDBC driver `ojdbc14.jar`
 in your Java load path. Read [Raimond's blog article][oracle-adapter] for more
 instructions.
@@ -161,6 +172,7 @@ repository (you may need hoe first `jruby -S gem install hoe`):
 
     cd jdbc_drivers/sqlserver
     jruby -S rake install
+    cd ../..
 
 Then you can proceed to install the DataObjects' driver:
 
@@ -175,24 +187,21 @@ Installing DataMapper's core and more gems should then be very straight-forward:
 
     git clone git://github.com/datamapper/dm-core.git
     cd dm-core
-    git checkout -b next --track origin/next
     jruby -S rake install
     cd ..
 
     git clone git://github.com/datamapper/dm-more.git
-    cd cd dm-more
-    git checkout -b next --track origin/next
+    cd dm-more
     jruby -S rake install
     cd ..
 
-### Install Merb (edge)
+### Install Merb
 
-There is not yet a Merb release that is fully compatible with the DataMapper
-0.10.0 release, so you'll also need to install Merb from source:
+The Merb maintainers just came out with a release (1.0.15) that should be
+compatible with DataMapper 0.10.x series. You should be able to install the gems
+as follows:
 
-    git clone git://github.com/merb/merb.git merb
-    jruby -S rake install
-
+    sudo jruby -S gem install merb-core merb-more
 
 Create a Merb Project
 ---------------------
@@ -203,44 +212,30 @@ this generator type.
 
     cd ~/Projects
     jruby -S merb-gen app myapp
+    cd myapp
 
 Before you run the application, make sure the dependency versions in
 `config/dependencies.rb` correspond with the "edge" versions you just installed.
 
 Open config/dependencies.rb in your favourite text editor.
 
-If the dependencies are out-of-date:
+If the dependencies are out-of-date, then bump them appropriately:
 
 {% highlight ruby %}
-    merb_gems_version = "1.0.12"
-    dm_gems_version   = "0.9.11"
-    do_gems_version   = "0.9.11"
+merb_gems_version = "1.0.15"
+dm_gems_version   = "~> 0.10"
+do_gems_version   = "~> 0.10"
 {% endhighlight %}
 
-Then bump them appropriately:
-
-{% highlight ruby %}
-    merb_gems_version = "1.1"
-    dm_gems_version   = "0.10.2"
-    do_gems_version   = "0.10.1"
-{% endhighlight %}
-
-Also change the following:
-
-{% highlight ruby %}
-    dependency "merb_datamapper", merb_gems_version
-{% endhighlight %}
-
-to:
-
-{% highlight ruby %}
-    dependency "merb_datamapper", "1.1"
-{% endhighlight %}
+**Note**: The next major version of Merb, 1.1, will completely replace the
+dependency handling mechanism described here with [Yehuda Katz's (wycats)][wycats]
+[Bundler][bundler]. Its technically possible to use the Bundler with Merb 1.0.x
+series, but for concision, I won't elaborate on doing that here.
 
 Run Merb
 --------
 
-Before adding in any customisatons of your own, check you can run the
+Before adding in any customisatons of your own, check you're able to run the
 application.
 
 Merb is built on Rack, and Rack needs a webserver. Webrick is a part of the Ruby
@@ -259,9 +254,9 @@ so let's try with Mongrel instead:
 
 (this time with `-V` to give us some verbose output)
 
-I am personally a big fan of GlassFish for Java/JVM deployments. You can use
-something like Warbler to create a WAR file for deployment, but if you're coming
-from the Ruby world, the following is much simpler:
+I am personally a big fan of [GlassFish][glassfish] for Java/JVM deployments.
+You can use something like Warbler to create a WAR file for deployment, but if
+you're coming from the Ruby world, the following is much simpler:
 
     jruby -S gem install glassfish
     glassfish
@@ -269,11 +264,50 @@ from the Ruby world, the following is much simpler:
 Add a Model
 -----------
 
-{% highlight ruby %}
+Here I start to get lazy. Bereft of ideas, and starting to think about needing
+to cook, I decided to create a simple Recipe tracker. While introducing some of
+the cooler (and defining) DataMapper features will have to wait until a future
+article, this simple child-parent model should be immediately familiar to anyone
+who's done basic web development.
 
+Create a file `ingredient.rb` in `app/models`:
+
+{% highlight ruby %}
+class Ingredient
+  include DataMapper::Resource
+
+  property :id,           Serial
+  property :name,         String, :length => 50, :nullable => false
+
+  belongs_to :recipe
+
+end
 {% endhighlight %}
 
-    jruby -S rake db:migrate
+and a file `recipe.rb` in `app/models`:
+
+{% highlight ruby %}
+class Recipe
+  include DataMapper::Resource
+
+  property :id,           Serial
+  property :title,        String, :length => 100, :nullable => false
+  property :instructions, Text
+  property :cooking_mins, Integer, :min => 5, :max => 120
+
+  has n, :ingredients
+
+end
+{% endhighlight %}
+
+
+<< CHANGE THE DATABASE SETTING>>
+
+Automigrate the database:
+
+    jruby -S rake db:automigrate
+
+And run the application with *ONE* of the following commands:
 
     jruby -S merb
     glassfish
@@ -281,36 +315,51 @@ Add a Model
 Add a UI
 --------
 
-Here I'm sorry to say we're going to cheat. We're not actually going to spend any time building a UI, but instead we'll rely on `merb-admin`, a project that automatically generates an admin front-end similar to the Django.
+Here I'm sorry to say we're going to cheat (yet again!). We're not actually
+going to spend any time building a UI, but instead we'll rely on `merb-admin`, a
+project that automatically generates an admin front-end similar to [Django][django],
+the Python web application framework.
 
-    sudo jruby -S gem install builder
-    sudo jruby -S gem install sferik-merb-admin -s http://gems.github.com
+    jruby -S gem install builder
+    jruby -S gem install merb-admin -s http://gemcutter.org
 
 In your app, add the following dependency to config/dependencies.rb:
 
 {% highlight ruby %}
-dependency "sferik-merb-admin", "0.3.1", :require_as => "merb-admin"
+dependency "merb-admin", "0.6.6"
 {% endhighlight %}
 
-Add the following route to config/router.rb:
+Add the following route to config/router.rb (just after `:merb_auth_slice_password`):
 
 {% highlight ruby %}
-slice(:MerbAdmin, :name_prefix => nil, :path_prefix => "", :default_routes => false)
+slice(:merb_auth_slice_password, :name_prefix => nil, :path_prefix => "")
+slice(:merb_admin, :path_prefix => "admin")
 {% endhighlight %}
 
 Then, run the following rake task:
 
-    sudo jruby -S rake slices:merb-admin:install
+    jruby -S rake slices:merb-admin:install
+
+Fire up your application, with *ONE* of the following commands:
+
+    jruby -S merb
+    glassfish
 
 Visit http://localhost:4000/admin, or if you're running with glassfish,
 http://localhost:3000/admin.
 
+And that's it for now!
 
 
 [readme]:http://github.com/datamapper/do/blob/next/README.markdown
+[merb]:http://merbivore.com/
 [java-downloads]:http://java.sun.com/javase/downloads/index.jsp
 [soylatte]:http://landonf.bikemonkey.org/static/soylatte/
 [do-wiki]:http://wiki.github.com/datamapper/do/jruby
+[warbler]:http://warbler.kenai.com/
 [glassfish]:http://jruby.org/getting-started
 [oracle-adapter]:http://blog.rayapps.com/2009/07/21/initial-version-of-datamapper-oracle-adapter/
 [migrate-0100]:http://sick.snusnu.info/2009/06/03/migrating-to-datamapper-0100/
+[wycats]:http://yehudakatz.com/
+[bundler]:http://github.com/wycats/bundler
+[django]:http://www.djangoproject.com/
