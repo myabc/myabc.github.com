@@ -8,7 +8,7 @@ categories: code
 Underneath DataMapper (at least if you haven't bitten the [NoSQL][nosql] bullet
 just yet) lies DataObjects. DataObjects is an attempt to rewrite existing Ruby
 database drivers to conform to one, standard interface. If you're a recent
-arrival from the world of PHP or .Net, then it the DO API will not look too
+arrival from the world of PHP or .Net, then the DO API will not look too
 disimilar to either PDO or ADO.net.
 
 Late this Spring, tucked away in the DataObjects' Release Notes for version
