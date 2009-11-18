@@ -5,8 +5,8 @@ author: myabc
 categories: code
 ---
 
-Underneath DataMapper (at least if you haven't bitten the #nosql bullet just
-yet) lies DataObjects. DataObjects is an attempt to rewrite existing Ruby
+Underneath DataMapper (at least if you haven't bitten the [NoSQL][nosql] bullet
+just yet) lies DataObjects. DataObjects is an attempt to rewrite existing Ruby
 database drivers to conform to one, standard interface. If you're a recent
 arrival from the world of PHP or .Net, then it the DO API will not look too
 disimilar to either PDO or ADO.net.
@@ -90,14 +90,20 @@ That's it! Unlike with ActiveRecord, you don't have to specify a separate JDBC
 variant.
 
 However, for the purpose of these instructions and because our JRuby support is
-still developing at a rapid pace (for instance new drivers are being made
-available all the time), we'll cover installing the *edge* version of
+still developing at a rapid pace (for instance, our SQL Server support is only
+available in our Git repository), we'll cover installing the *edge* version of
 DataObjects / DataMapper.
 
 ### Install Pre-Requisites
 
-**Note**: Under Windows Vista/7, you may have to run cmd.exe with Administrator
-privileges (Start -> type `cmd.exe`, right click, Run as Administrator).
+**Note**: Under Windows Vista/7, if you've used the JRuby installer and have
+your system gems directory in `C:\Program Files\` then you may have to run
+`cmd.exe` with Administrator privileges (**Start** -> type `cmd.exe`, right
+click, **Run as Administrator**).
+
+**Note**: On *NIX platforms, you may need to prefix commands with sudo,
+depending on where you installed `jruby` (unless, of course, you're using
+[rvm][rvm]).
 
 Install Addressable and an implementation of JSON:
 
@@ -108,7 +114,7 @@ Install Addressable and an implementation of JSON:
 Change to the directory where you keep your Code. (So `~/Dev`, `c:\code`,
 `c:\Documents and Settings\harry\Code`, etc.)
 
-We start by installing Extlib:
+We start by installing [Extlib][extlib]:
 
     git clone git://github.com/datamapper/extlib.git
     cd extlib
@@ -119,6 +125,11 @@ We start by installing Extlib:
 
     jruby -S rake package
     jruby -S gem install pkg\extlib-0.9.14.gem
+
+Extlib is a collection of extensions to core Ruby classes and is currently used
+by both the DataMapper and Merb projects. However, it'll go away in future
+versions as we start to take advantage of the new, modular ActiveSupport in
+Rails 3.0.
 
 ### Install DataObjects
 
@@ -150,7 +161,7 @@ To install `do_jdbc` (the DataObjects' JDBC support library):
 
 To install the JDBC driver for the DataObjects driver, if you're using one of
 *mysql*, *postgres*, *sqlite3* then we rely on ActiveRecord-JDBC to package the
-JDBC jar files as Gems for us. Installation should be a matter:
+JDBC jar files as Gems for us. Installation should be a matter of:
 
     jruby -S gem install jdbc-[DBNAME]
     jdbc-derby
@@ -159,8 +170,6 @@ JDBC jar files as Gems for us. Installation should be a matter:
     jdbc-mysql
     jdbc-postgres
     jdbc-sqlite3
-
-    sudo jruby -S gem install jdbc-sqlite3
 
 If you're on *Oracle*, then you need to place the Oracle JDBC driver `ojdbc14.jar`
 in your Java load path. Read [Raimond's blog article][oracle-adapter] for more
@@ -173,6 +182,14 @@ repository (you may need hoe first `jruby -S gem install hoe`):
     cd jdbc_drivers/sqlserver
     jruby -S rake install
     cd ../..
+
+
+Unless you've got your own project or have your mind set on a specific vendor's
+relational database, then follow this tutorial all the way through and install
+SQLite3 support (it means you won't have to do any configuration later!):
+
+    jruby -S gem install jdbc-sqlite3
+
 
 Then you can proceed to install the DataObjects' driver:
 
@@ -270,7 +287,7 @@ the cooler (and defining) DataMapper features will have to wait until a future
 article, this simple child-parent model should be immediately familiar to anyone
 who's done basic web development.
 
-Create a file `ingredient.rb` in `app/models`:
+Create a file `ingredient.rb` in `app/models` with the following contents:
 
 {% highlight ruby %}
 class Ingredient
@@ -279,12 +296,12 @@ class Ingredient
   property :id,           Serial
   property :name,         String, :length => 50, :nullable => false
 
-  belongs_to :recipe
+  belongs_to :recipe, :nullable => true
 
 end
 {% endhighlight %}
 
-and a file `recipe.rb` in `app/models`:
+and a file `recipe.rb` in `app/models` with the following contents:
 
 {% highlight ruby %}
 class Recipe
@@ -301,7 +318,29 @@ end
 {% endhighlight %}
 
 
-<< CHANGE THE DATABASE SETTING>>
+If you chose SQLite3 as the relational database you wanted to use earlier, then
+you don't need to change any database configuration. If you chose another
+database, then open `config/database.yml` and change appropriately. For
+PostgreSQL, or Microsoft SQL Server configurations might look like the
+following:
+
+{% highlight yaml %}
+# PostgreSQL
+development: &defaults
+  adapter: postgres
+  database: sample_development
+  username: postgres
+  password: 
+  host: localhost
+
+# Microsoft SQL Server
+development: &defaults
+  adapter: sqlserver
+  database: sample_development;instance=SQLEXPRESS;
+  username: mswin
+  password: doze
+  host: sqlserver.localnet
+{% endhighlight %}
 
 Automigrate the database:
 
@@ -348,14 +387,25 @@ Fire up your application, with *ONE* of the following commands:
 Visit http://localhost:4000/admin, or if you're running with glassfish,
 http://localhost:3000/admin.
 
-And that's it for now!
+You should have now have an application with a (very) simple interface for
+adding recipes and ingredients.
+
+<div class="thumbnail"><a href="http://skitch.com/alexcoles/nebyi/new-recipe-merbadmin"><img src="http://img.skitch.com/20091118-nu1ewthus4nu1ncrbkcyau6jsb.preview.jpg" alt="New recipe | MerbAdmin" /></a><br /><span style="font-family: Lucida Grande, Trebuchet, sans-serif, Helvetica, Arial; font-size: 10px; color: #808080">Uploaded with <a href="http://plasq.com/">plasq</a>'s <a href="http://skitch.com">Skitch</a>!</span></div>
+
+You can find the [source code for this application on GitHub](http://github.com/myabc/recipes-sample-app).
+
+That's it for now! Please leave a comment and let me know what (if anything) was
+useful, so that I can focus my efforts for future articles.
 
 
 [readme]:http://github.com/datamapper/do/blob/next/README.markdown
+[nosql]:http://en.wikipedia.org/wiki/NoSQL
 [merb]:http://merbivore.com/
 [java-downloads]:http://java.sun.com/javase/downloads/index.jsp
 [soylatte]:http://landonf.bikemonkey.org/static/soylatte/
 [do-wiki]:http://wiki.github.com/datamapper/do/jruby
+[rvm]:http://rvm.beginrescueend.com/
+[extlib]:http://github.com/datamapper/extlib/
 [warbler]:http://warbler.kenai.com/
 [glassfish]:http://jruby.org/getting-started
 [oracle-adapter]:http://blog.rayapps.com/2009/07/21/initial-version-of-datamapper-oracle-adapter/
