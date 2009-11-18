@@ -95,7 +95,7 @@ body.bp .notice a { color: #514721; }
 body.bp .success { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #e6efc2; color: #264409; border-color: #c6d880; }
 body.bp .success a { color: #264409; }
 body.bp .hide { display: none; }
-body.bp .highlight { background: yellow; }
+body.bp .highlight { background: #404040; }
 body.bp .added { background: #006600; color: white; }
 body.bp .removed { background: #990000; color: white; }
 
@@ -121,6 +121,7 @@ body.three-col #sidebar { display: inline; float: left; margin-right: 10px; widt
 * html body.three-col #sidebar { overflow-x: hidden; }
 body.three-col #content { display: inline; float: left; margin-right: 0; width: 590px; padding-right: 40px; }
 * html body.three-col #content { overflow-x: hidden; }
+body.three-col #content .highlight { padding: 2px 5px 2px 5px; color: #fff; }
 body.three-col #content .published { background-color: #8C0327; color: #fff; font-family: Georgia; float: right; margin: 0 0 0 5px; text-align: center; width: 60px; }
 body.three-col #content .published .day { font-size: 26px; }
 body.three-col #content .published .month { font-variant: small-caps; }
