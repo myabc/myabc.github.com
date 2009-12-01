@@ -109,10 +109,10 @@ Install Addressable and an implementation of JSON:
 
     jruby -S gem install json_pure addressable
 
-Install Gemcutter (DataMapper and Merb projects are currently in the process of
-migrating their Rakefiles to use Gemcutter):
+Install Jeweler (DataMapper and Merb projects are currently in the process of
+migrating their Rakefiles to use Jeweler):
 
-    jruby -S gem install gemcutter
+    jruby -S gem install jeweler
 
 ### Install Extlib
 
@@ -402,7 +402,7 @@ You can find the [source code for this application on GitHub](http://github.com/
 That's it for now! Please leave a comment and let me know what (if anything) was
 useful, so that I can focus my efforts for future articles.
 
-**UPDATE 1 Dec 2009**: Grammar, spelling fixes. Added note on Gemcutter.
+**UPDATE 1 Dec 2009**: Grammar, spelling fixes. Added note on Jeweler.
 
 
 [readme]:http://github.com/datamapper/do/blob/next/README.markdown
