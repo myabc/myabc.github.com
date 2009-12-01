@@ -11,15 +11,15 @@ database drivers to conform to one, standard interface. If you're a recent
 arrival from the world of PHP or .Net, then the DO API will not look too
 disimilar to either PDO or ADO.net.
 
-Late this Spring, tucked away in the DataObjects' Release Notes for version
+Late this spring, tucked away in the DataObjects' Release Notes for version
 0.9.12, was mention of support for JRuby. Unfortunately the support that
 featured in 0.9.12 was incomplete at best. We needed a little longer to get
-things working well, but over the summer we made significant support in
+things working well, but over the summer we made significant progress in
 supporting a [large number of][readme] databases on the JRuby platform.
 
 For a long while, I had a Gist up on Github illustrating the steps needed to get
 up and running with DataMapper on JRuby. I promised to follow up with a more
-detailed tutorial, but its taken some time to get it published. In part, this
+detailed tutorial, but it's taken some time to get it published. In part, this
 has been down to the fact that going through the process of writing a tutorial
 has helped me uncover a plethora of bugs and inconsistencies, and I wanted to
 take the time to deal with them before hitting the metaphorical "publish"
@@ -108,6 +108,11 @@ depending on where you installed `jruby` (unless, of course, you're using
 Install Addressable and an implementation of JSON:
 
     jruby -S gem install json_pure addressable
+
+Install Gemcutter (DataMapper and Merb projects are currently in the process of
+migrating their Rakefiles to use Gemcutter):
+
+    jruby -S gem install gemcutter
 
 ### Install Extlib
 
@@ -246,13 +251,13 @@ do_gems_version   = "~> 0.10"
 
 **Note**: The next major version of Merb, 1.1, will completely replace the
 dependency handling mechanism described here with [Yehuda Katz's (wycats)][wycats]
-[Bundler][bundler]. Its technically possible to use the Bundler with Merb 1.0.x
+[Bundler][bundler]. It's technically possible to use the Bundler with Merb 1.0.x
 series, but for concision, I won't elaborate on doing that here.
 
 Run Merb
 --------
 
-Before adding in any customisatons of your own, check you're able to run the
+Before adding in any customisations of your own, check you're able to run the
 application.
 
 Merb is built on Rack, and Rack needs a webserver. Webrick is a part of the Ruby
@@ -330,7 +335,7 @@ development: &defaults
   adapter: postgres
   database: sample_development
   username: postgres
-  password: 
+  password:
   host: localhost
 
 # Microsoft SQL Server
@@ -346,7 +351,7 @@ Automigrate the database:
 
     jruby -S rake db:automigrate
 
-And run the application with *ONE* of the following commands:
+And run the application with *one* of the following commands:
 
     jruby -S merb
     glassfish
@@ -379,7 +384,7 @@ Then, run the following rake task:
 
     jruby -S rake slices:merb-admin:install
 
-Fire up your application, with *ONE* of the following commands:
+Fire up your application, with *one* of the following commands:
 
     jruby -S merb
     glassfish
@@ -396,6 +401,8 @@ You can find the [source code for this application on GitHub](http://github.com/
 
 That's it for now! Please leave a comment and let me know what (if anything) was
 useful, so that I can focus my efforts for future articles.
+
+**UPDATE 1 Dec 2009**: Grammar, spelling fixes. Added note on Gemcutter.
 
 
 [readme]:http://github.com/datamapper/do/blob/next/README.markdown
