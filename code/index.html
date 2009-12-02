@@ -1,0 +1,14 @@
+---
+layout: default
+title:  Code | Archive
+---
+
+{% for post in site.categories.code %}
+
+<h1><a href="{{ post.id }}.html">{{ post.title }}</a></h1>
+
+{{ post.date | date: "%d %b, %Y"  }}
+
+<p>{{ post.content | strip_html | truncatewords: 35 }}</p>
+
+{% endfor %}
