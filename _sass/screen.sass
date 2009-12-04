@@ -6,7 +6,7 @@
 @import blueprint
 // Import the non-default scaffolding module.
 // @import blueprint/modules/scaffolding.sass
-@import blueprint/modules/colors.sass
+// @import blueprint/modules/colors.sass
 
 // To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
 // +blueprint
@@ -22,6 +22,11 @@ body.bp
   +blueprint-interaction
   // Remove the scaffolding when you're ready to start doing visual design.
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
+
+  a
+    :color #a69c91 
+
+
 form.bp
   +blueprint-form
 
@@ -50,7 +55,7 @@ body.three-col
     .published
       background-color: #8C0327
       color: #fff
-      font-family: Georgia
+      font-family: Titillium
       float: right
       margin: 0 0 0 5px
       text-align: center

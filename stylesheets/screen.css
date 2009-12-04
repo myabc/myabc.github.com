@@ -11,28 +11,26 @@ table { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inhe
 
 a img { border: none; }
 
-h1, h2 { font-family: Georgia, "Times New Roman", Times, serif; font-weight: normal; letter-spacing: -1px; margin: 0; }
-h1 a, h2 a { text-decoration: none !important; }
+@font-face { font-family: 'Titillium1'; src: url(TitilliumMaps26L004.otf) format('opentype'); }
+
+@font-face { font-family: 'Titillium2'; src: url(TitilliumMaps26L003.otf) format('opentype'); }
+
+@font-face { font-family: 'Titillium3'; src: url(TitilliumMaps26L002.otf) format('opentype'); }
+
+@font-face { font-family: 'Titillium4'; src: url(TitilliumMaps26L001.otf) format('opentype'); }
+
+@font-face { font-family: 'Titillium5'; src: url(TitilliumMaps26L.otf) format('opentype'); }
+
+@font-face { font-family: 'Anonymous Pro'; src: url(Anonymous Pro.ttf) format('ttf'); }
+
+h1, h2 { font-family: "Titillium3", Georgia, "Times New Roman", Times, serif !important; }
+h1 a, h2 a { color: #a69c91 !important; text-decoration: none !important; }
 h1 a:hover, h2 a:hover { text-decoration: underline !important; }
 
-h3 { font-weight: normal; letter-spacing: -1px; margin: 0; }
+h3 { font-family: "Titillium2", Georgia, "Times New Roman", Times, serif; font-weight: normal; letter-spacing: -1px; margin: 0; }
 h3#comments { font-size: 1.6em; }
 
-#header { background-color: #2B1D33; height: 80px; }
-#header h1 { color: #fff; font-size: 3.4em; margin: 10px 0 0 10px; }
-#header h1 a { color: #fff; text-decoration: none; }
-#header h1 a:hover { text-decoration: underline; }
-#header p { color: #fff; font-size: 1.2em; margin: 0 0 0 10px; }
-
-#content > h1, #content > h2 { margin-top: 0.8em; }
-
-#sidebar h3 { color: #eee; font-size: 1.5em; margin: 1em 0; }
-#sidebar ul { list-style-type: none; margin: 0; padding: 0; }
-#sidebar ul li { border-bottom: 1px dotted #ddd; margin-bottom: 0.3em; padding: 0.3em; }
-
-#sidebar > h2 { margin-top: 0.8em; }
-
-p.date { font-weight: bold; }
+pre, code { font-family: 'Anonymous Pro' !important; }
 
 body.bp { line-height: 1.5; font-family: Helvetica Neue, Arial, Helvetica, sans-serif; color: #333333; font-size: 75%; }
 body.bp h1 { font-weight: normal; color: #2b1d33; font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
@@ -87,7 +85,7 @@ body.bp .first { margin-left: 0; padding-left: 0; }
 body.bp .last { margin-right: 0; padding-right: 0; }
 body.bp .top { margin-top: 0; padding-top: 0; }
 body.bp .bottom { margin-bottom: 0; padding-bottom: 0; }
-body.bp .showgrid { background: url('/images/grid.png?1255172044'); }
+body.bp .showgrid { background: url('/images/grid.png?1259179649'); }
 body.bp .error { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
 body.bp .error a { color: #8a1f11; }
 body.bp .notice { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fff6bf; color: #514721; border-color: #ffd324; }
@@ -98,6 +96,7 @@ body.bp .hide { display: none; }
 body.bp .highlight { background: #404040; }
 body.bp .added { background: #006600; color: white; }
 body.bp .removed { background: #990000; color: white; }
+body.bp a { color: #a69c91; }
 
 form.bp label { font-weight: bold; }
 form.bp fieldset { padding: 1.4em; margin: 0 0 1.5em 0; }
@@ -122,6 +121,6 @@ body.three-col #sidebar { display: inline; float: left; margin-right: 10px; widt
 body.three-col #content { display: inline; float: left; margin-right: 0; width: 590px; padding-right: 40px; }
 * html body.three-col #content { overflow-x: hidden; }
 body.three-col #content .highlight { padding: 2px 5px 2px 5px; color: #fff; }
-body.three-col #content .published { background-color: #8C0327; color: #fff; font-family: Georgia; float: right; margin: 0 0 0 5px; text-align: center; width: 60px; }
+body.three-col #content .published { background-color: #8C0327; color: #fff; font-family: Titillium; float: right; margin: 0 0 0 5px; text-align: center; width: 60px; }
 body.three-col #content .published .day { font-size: 26px; }
 body.three-col #content .published .month { font-variant: small-caps; }
