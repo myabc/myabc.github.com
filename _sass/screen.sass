@@ -22,47 +22,81 @@ body.bp
   +blueprint-interaction
   // Remove the scaffolding when you're ready to start doing visual design.
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
-
-  a
-    :color #a69c91 
-
+  :background #343434
 
 form.bp
   +blueprint-form
 
-// Page layout can be done using mixins applied to your semantic classes and IDs:
-body.three-col
-  #container
-    +container
-  #header, #footer
-    +column(!blueprint_grid_columns)
-  #sidebar
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    !sidebar_columns = floor(!blueprint_grid_columns / 3)
-    +column(!sidebar_columns)
-  #content
-    // Two thirds of the grid columns, rounding up.
-    // With 24 cols, this is 16.
-    !content_columns = ceil(2 * !blueprint_grid_columns / 3) - 1
-    // true means it's the last column in the row
-    +column(!content_columns, true)
-    +append(1)
+#container
+  :margin 0 auto
 
-    .highlight
-      padding: 2px 5px 2px 5px
-      color: #fff
+#wrap-post
+  :background-image url(/images/band2.png)
+  :background-repeat repeat-y
 
-    .published
-      background-color: #8C0327
-      color: #fff
-      font-family: Titillium
-      float: right
-      margin: 0 0 0 5px
-      text-align: center
-      width: 60px
+#separator-post
+  :background-image url(/images/band8.png)
+  :background-repeat repeat-y
 
-      .day
-        font-size: 26px
+#meta-post
+  :background-image url(/images/band3.png)
+  :background-repeat repeat-y
 
-      .month
-        font-variant: small-caps
+#meta-title
+  :margin 0
+  :margin-bottom -10px
+  :width 660px
+  :float left
+  :padding-left 20px
+
+#meta-date
+  :margin 0
+  :padding-left 5px
+  :width 110px
+  :float left
+
+#post-content
+  :background-image url(/images/band4.png)
+  :background-repeat repeat-y
+  :width 740px
+  :padding 30px
+  :margin-bottom -20px
+  p
+    :font-size 110%
+
+#clear-float
+  :clear both
+
+#menu
+  :background-image url(/images/band1.png)
+  :background-repeat repeat-y
+
+#header
+  :background-image url(/images/band8.png)
+  :background-repeat repeat-y
+
+#menu-left
+  :padding-top 170px
+  :padding-left 20px
+  :padding-right 20px
+  :margin 0
+  :width 190px
+  :float left
+
+#home
+  :margin 0
+  :width 330px
+  :float left
+
+#menu-right
+  :padding-top 170px
+  :padding-left 20px
+  :padding-right 20px
+  :margin 0
+  :width 190px
+  :float left
+
+#search
+  input
+    :background-color #ad7f6b
+    :border none

@@ -4,26 +4,28 @@ title:  Various Musings
 ---
 
 {% for post in site.posts offset: 0 limit: 5 %}
-
-<!-- <h2><a href="{{ post.id }}.html">{{ post.title }}</a></h2>
-<p class="date">{{ post.date | date: "%d %b, %Y" }}</p>
--->
-<div id="wrap-post" style="background-image: url(/images/band2.png); background-repeat: repeat-y;">
-  &nbsp;
-</div>
-<div id="meta-post" style="background-image: url(/images/band3.png); background-repeat: repeat-y;">
-  <div style="margin: 0; width: 660px; float:left; padding-left: 20px; background-color: transparent;">
-    <h1> <a href="{{ post.id }}.html">{{ post.title }}</a> </h1>
-  </div> 
-  <div style="margin: 0; padding-left: 10px; width: 110px; height: auto; float:left; background: transparent;">
-    <p style="color: #3e393a; ">{{ post.date | date: "%d %b, %Y" }}</p>
+<div id="content">
+  <div id="wrap-post">
+    &nbsp;
   </div>
-  <div style="clear:both"></div>
-</div>
-<div id="post-content" style="background-image: url(/images/band4.png); background-repeat: repeat-y; width: 770px; padding: 20px 10px 10px 20px">
-  <p  style="color: #3f3735; ">{{ post.content | strip_html | truncatewords: 35 }}</p>
-</div>
-<div id="wrap-post" style="background-image: url(/images/band2.png); background-repeat: repeat-y;">
-  &nbsp;
+  <div id="meta-post">
+    <div id="meta-title">
+      <h1><a href="{{ post.id }}.html">{{ post.title }}</a></h1>
+    </div>
+    <div id="meta-date">
+      <p>{{ post.date | date: "%d %b, %Y" }}</p>
+    </div>
+    <div id="clear-float">
+    </div>
+  </div>
+  <div id="post-content">
+    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+  </div>
+  <div id="wrap-post">
+    &nbsp;
+  </div>
+  <div id="separator-post">
+    &nbsp;
+  </div>
 </div>
 {% endfor %}

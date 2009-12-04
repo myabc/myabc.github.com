@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Alex Coles | {{ page.title }}</title>
+  <title>myabc | {{ page.title }}</title>
   <meta name="generator" content="Jekyll" />
 
   <link rel="stylesheet" href="/stylesheets/screen.css"  type="text/css" media="screen, projection" charset="utf-8"/>
@@ -23,7 +23,7 @@
               username: "myabc",
               join_text: "auto",
               avatar_size: 32,
-              count: 5,
+              count: 1,
               loading_text: "loading tweets..."
           });
       });
@@ -32,51 +32,11 @@
 
   <link rel="alternate" type="application/rss+xml" href="http://feeds.alexbcoles.com/alexbcoles" />
 </head>
-<body class="bp three-col" style="background: #343434">
-  <div id="container2">
-    <div id="header2">
-      <img src="/images/home.png">
-    </div>
-    <div id="menu01" style="background-image: url(/images/band1.png); background-repeat: repeat-y;">
-      About
-    </div>
-    <div id="content2" >
-      {{ content }}
-    </div>
-<!--    <div id="sidebar">
-      {% include about.html %}
 
-      <form action="http://www.google.com/cse" id="cse-search-box">
-        <div>
-          <input type="hidden" name="cx" value="004211119241033965410:bbu9uuwp4m8" />
-          <input type="hidden" name="ie" value="UTF-8" />
-          <input type="text" id="q" name="q" size="15" />
-          <input type="submit" name="sa" value="Search" />
-        </div>
-      </form>
-
-      {% include links.html %}
-      {% include github.html %}
-      <div class="tweet"></div>
-    </div>
-    <div id="footer">
-      <div>
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License</a>.
-      </div>
-      &copy; Copyright 2009, Alex Coles. <br/>
-      Created with <a href="http://github.com/mojombo/jekyll">Jekyll</a>.
-      Hosted with <a href="http://github.com">GitHub</a>.
-    </div>
-  <script type="text/javascript">
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-  try {
-  var pageTracker = _gat._getTracker("UA-11178780-1");
-  pageTracker._trackPageview();
-  } catch(err) {}</script>
--->
+<body class="bp">
+  <div id="container">
+    {% include header.html %}
+    {{ content }}
   </div>
 </body>
 </html>
