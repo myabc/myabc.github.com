@@ -10,11 +10,47 @@ if (location.href.match(/localhost/)) {
 //]]>
 </script>
 
-<h1>{{ page.title }}</h1>
 
-{{ content }}
 
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/myabc/embed.js"></script><noscript><a href="http://myabc.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+<div id="content">
+  <div id="wrap-post">
+    &nbsp;
+  </div>
+  <div id="meta-post">
+    <div id="meta-title">
+      <h1>{{ page.title }}</h1>
+    </div>
+    <div id="meta-date">
+      <p>{{ page.date | date: "%d %b, %Y" }}</p>
+    </div>
+    <div id="clear-float">
+    </div>
+  </div>
+  <div id="post-content">
+    <p>{{ content }}</p>
+  </div>
+  <div id="wrap-post">
+    &nbsp;
+  </div>
+  <div id="separator-post">
+    &nbsp;
+  </div>
+  <div id="wrap-post">
+    &nbsp;
+  </div>
+  <div id="post-content">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript" src="http://disqus.com/forums/myabc/embed.js"></script>
+    <noscript><a href="http://myabc.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+    <!--    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> -->
+  </div>
+  <div id="wrap-post">
+    &nbsp;
+  </div>
+  <div id="separator-post">
+    &nbsp;
+  </div>
+</div>
 
 <script type="text/javascript">
 //<![CDATA[

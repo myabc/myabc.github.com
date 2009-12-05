@@ -39,15 +39,16 @@ form.bp
   :background-repeat repeat-y
 
 #meta-post
+  :padding-top 5px
   :background-image url(/images/band3.png)
   :background-repeat repeat-y
 
 #meta-title
   :margin 0
   :margin-bottom -10px
-  :width 660px
+  :width 655px
   :float left
-  :padding-left 20px
+  :padding-left 30px
 
 #meta-date
   :margin 0
@@ -58,11 +59,30 @@ form.bp
 #post-content
   :background-image url(/images/band4.png)
   :background-repeat repeat-y
-  :width 740px
-  :padding 30px
+  :width 730px
+  :padding-left 35px
+  :padding-right 30px
+  :padding-top 30px
+  :padding-bottom 30px
   :margin-bottom -20px
-  p
-    :font-size 110%
+  p, li, span, a, h1, h2, h3, pre, code
+    :color #210d11 !important
+  p, li, span
+    :font-family 'Titillium2' !important
+    :font-size 120%
+  a
+    :font-family 'Titillium3' !important
+    :text-decoration none !important
+  h1, h2, h3
+    :font-family 'Titillium3' !important
+  pre, code
+    :font-family 'Anonymous Pro' !important
+    :font-size 100% !important
+
+#disqus_thread
+  p, li, span, a, h1, h2, h3, pre, code
+    :color #451c23 !important
+    :font-size 100%
 
 #clear-float
   :clear both
@@ -73,6 +93,10 @@ form.bp
 
 #header
   :background-image url(/images/band8.png)
+  :background-repeat repeat-y
+
+#footer
+  :background-image url(/images/band9.png)
   :background-repeat repeat-y
 
 #menu-left
@@ -100,3 +124,23 @@ form.bp
   input
     :background-color #ad7f6b
     :border none
+
+#image-left
+  :margin 0
+  :width 100px
+  :float left
+  :padding-left 20px
+  :padding-top 20px
+
+#footer-text
+  :margin 0
+  :width 580px
+  :float left
+  :padding-top 20px
+
+#image-right
+  :margin 0
+  :width 100px
+  :float left
+  :padding-top 20px
+

@@ -23,7 +23,7 @@ a img { border: none; }
 
 @font-face { font-family: 'Anonymous Pro'; src: url(Anonymous Pro.ttf) format('ttf'); }
 
-h1 { font-family: "Titillium3", Georgia, "Times New Roman", Times, serif !important; }
+h1 { font-family: "Titillium3", Georgia, "Times New Roman", Times, serif !important; color: #a69c91 !important; }
 h1 a { color: #a69c91 !important; text-decoration: none !important; }
 h1 a:hover { text-decoration: underline !important; }
 
@@ -32,13 +32,15 @@ h2 { font-family: "Titillium3", Georgia, "Times New Roman", Times, serif !import
 h3 { font-family: "Titillium2", Georgia, "Times New Roman", Times, serif !important; }
 h3#comments { font-size: 1.6em; }
 
-pre, code { font-family: 'Anonymous Pro' !important; }
-
 input { font-family: "Titillium2", Georgia, "Times New Roman", Times, serif !important; }
 
 #header p { font-family: "Titillium3", Georgia, "Times New Roman", Times, serif !important; color: #ad7f6b !important; margin: 0 !important; }
 #header a { color: #ad7f6b !important; text-decoration: none !important; }
 #header a:hover { text-decoration: underline !important; }
+
+#footer p { font-family: "Titillium2", Georgia, "Times New Roman", Times, serif !important; color: #68454c !important; margin: 0 !important; }
+#footer a { font-family: "Titillium4", Georgia, "Times New Roman", Times, serif !important; color: #68454c !important; text-decoration: none !important; }
+#footer a:hover { text-decoration: underline !important; }
 
 #content p { font-family: "Titillium3", Georgia, "Times New Roman", Times, serif !important; color: #3f3735 !important; }
 
@@ -128,20 +130,28 @@ form.bp textarea { width: 390px; height: 250px; }
 
 #separator-post { background-image: url(/images/band8.png); background-repeat: repeat-y; }
 
-#meta-post { background-image: url(/images/band3.png); background-repeat: repeat-y; }
+#meta-post { padding-top: 5px; background-image: url(/images/band3.png); background-repeat: repeat-y; }
 
-#meta-title { margin: 0; margin-bottom: -10px; width: 660px; float: left; padding-left: 20px; }
+#meta-title { margin: 0; margin-bottom: -10px; width: 655px; float: left; padding-left: 30px; }
 
 #meta-date { margin: 0; padding-left: 5px; width: 110px; float: left; }
 
-#post-content { background-image: url(/images/band4.png); background-repeat: repeat-y; width: 740px; padding: 30px; margin-bottom: -20px; }
-#post-content p { font-size: 110%; }
+#post-content { background-image: url(/images/band4.png); background-repeat: repeat-y; width: 730px; padding-left: 35px; padding-right: 30px; padding-top: 30px; padding-bottom: 30px; margin-bottom: -20px; }
+#post-content p, #post-content li, #post-content span, #post-content a, #post-content h1, #post-content h2, #post-content h3, #post-content pre, #post-content code { color: #210d11 !important; }
+#post-content p, #post-content li, #post-content span { font-family: 'Titillium2' !important; font-size: 120%; }
+#post-content a { font-family: 'Titillium3' !important; text-decoration: none !important; }
+#post-content h1, #post-content h2, #post-content h3 { font-family: 'Titillium3' !important; }
+#post-content pre, #post-content code { font-family: 'Anonymous Pro' !important; font-size: 100% !important; }
+
+#disqus_thread p, #disqus_thread li, #disqus_thread span, #disqus_thread a, #disqus_thread h1, #disqus_thread h2, #disqus_thread h3, #disqus_thread pre, #disqus_thread code { color: #451c23 !important; font-size: 100%; }
 
 #clear-float { clear: both; }
 
 #menu { background-image: url(/images/band1.png); background-repeat: repeat-y; }
 
 #header { background-image: url(/images/band8.png); background-repeat: repeat-y; }
+
+#footer { background-image: url(/images/band9.png); background-repeat: repeat-y; }
 
 #menu-left { padding-top: 170px; padding-left: 20px; padding-right: 20px; margin: 0; width: 190px; float: left; }
 
@@ -150,3 +160,9 @@ form.bp textarea { width: 390px; height: 250px; }
 #menu-right { padding-top: 170px; padding-left: 20px; padding-right: 20px; margin: 0; width: 190px; float: left; }
 
 #search input { background-color: #ad7f6b; border: none; }
+
+#image-left { margin: 0; width: 100px; float: left; padding-left: 20px; padding-top: 20px; }
+
+#footer-text { margin: 0; width: 580px; float: left; padding-top: 20px; }
+
+#image-right { margin: 0; width: 100px; float: left; padding-top: 20px; }
