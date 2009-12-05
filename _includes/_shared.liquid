@@ -1,0 +1,41 @@
+{% for article in articles %}
+<div class="entry entry-{{ article.id }}">
+  <div class="entrytitle">
+    <h1>{{ article | link_to_article }}</h1>
+    <div class="published">
+      <span class="month">{{ article.published_at | format_date: 'm', true }}</month>
+      <span class="day">{{ article.published_at | format_date: 'd', true }}</day>
+      <span class="year">{{ article.published_at | format_date: 'y', true }}</year>
+    </div>
+  </div>
+  <div class="entrybody">
+    {% if article.excerpt %}
+      {{ article.excerpt }}
+      {% unless mode == 'single' %}
+      <a href="{{ article.url }}">Read the rest of this entry</a>
+      {% endunless %}
+    {% else %}
+      {% unless mode == 'single' %}{{ article.body }}{% endunless %}
+    {% endif %}
+    {% if mode == 'single' %}
+      {{ article.body }}
+    {% endif %}
+  </div>
+
+  <div class="entrymeta">
+  <div class="postinfo">
+    <span class="postedby">Posted by {{ article.author.login }}</span>
+    <span class="filedto">Filed in {{ article | linked_section_list }}</span>
+  </div>
+  {% unless mode == 'single' %}
+    {% if article.accept_comments %}<a href="{{ article.url }}#comments" class="commentslink">{{ article.comments_count | pluralize: 'comment' }}  &#187;</a>{% endif %}
+  {% endunless %}
+  </div>
+
+</div>
+{% endfor %}
+{% if mode == 'single' %}
+  <div class="commentsblock">
+    {% include 'comments' %}
+  </div>
+{% endif %}

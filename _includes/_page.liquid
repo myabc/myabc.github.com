@@ -1,0 +1,8 @@
+<h1>{{ article.title }}</h1>
+<div class="entry">{{ article.body }}</div>
+
+<ul>
+{% for page in section.pages %}
+  <li>{{ page | link_to_page }}</li>
+{% endfor %}
+</ul>
