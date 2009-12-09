@@ -6,4 +6,6 @@ categories: me
 ---
 
 
-I have set up a separate site and blog for work-related interests. Find it at &lt;a href="http://alexcolesportfolio.com/blog/"&gt;alexcolesportfolio.com/blog&lt;/a&gt;.
+I have set up a separate site and blog for work-related interests. Find it at
+<del>alexcolesportfolio.com/blog</del> (update: content now merged back into
+alexbcoles.com).
