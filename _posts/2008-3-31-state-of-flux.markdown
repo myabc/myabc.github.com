@@ -3,6 +3,7 @@ layout: post
 title: "State of Flux"
 author: myabc
 categories: code
+tags:   [metablogging]
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title: "There is stuff to come..."
 author: myabc
 categories: me
+tags:   [metablogging]
 ---
 
 

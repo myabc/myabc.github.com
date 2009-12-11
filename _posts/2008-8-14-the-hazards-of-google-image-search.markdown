@@ -3,6 +3,7 @@ layout: post
 title: "The Hazards of Google Image Search"
 author: myabc
 categories: me
+tags:       [technology]
 ---
 
 

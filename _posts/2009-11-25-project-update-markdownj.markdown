@@ -3,6 +3,7 @@ layout: post
 title: "Project Update: MarkdownJ"
 author: myabc
 categories: code
+tags:   [markdown, java, jruby]
 ---
 
 The [Web Dingus for MarkdownJ is back](http://dingus.markdownj.org/) and

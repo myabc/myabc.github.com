@@ -3,6 +3,7 @@ layout: post
 title: "Life on Mars"
 author: myabc
 categories: me
+tags:   [metablogging, software]
 ---
 
 

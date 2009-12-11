@@ -3,6 +3,7 @@ layout: post
 title: "Quick test message"
 author: myabc
 categories: me
+tags:   [metablogging]
 ---
 
 

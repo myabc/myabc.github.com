@@ -3,6 +3,7 @@ layout: post
 title: "Invites for Windows Live Messenger"
 author: myabc
 categories: me
+tags:   [time-wasting]
 ---
 
 

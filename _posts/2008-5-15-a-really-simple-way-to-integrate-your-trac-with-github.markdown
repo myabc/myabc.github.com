@@ -3,6 +3,7 @@ layout: post
 title: "A really simple way to integrate your Trac with GitHub"
 author: myabc
 categories: code
+tags:   [github, trac, integration, tutorials, admin]
 ---
 
 

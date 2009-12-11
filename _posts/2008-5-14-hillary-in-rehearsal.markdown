@@ -3,6 +3,7 @@ layout: post
 title: "The best Hillary impression I have seen"
 author: myabc
 categories: me
+tags:   [politics, election08, obama, hillary]
 ---
 
 

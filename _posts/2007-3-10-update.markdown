@@ -3,6 +3,7 @@ layout: post
 title: "Update"
 author: myabc
 categories: me
+tags:   [travel, places, personal]
 ---
 
 

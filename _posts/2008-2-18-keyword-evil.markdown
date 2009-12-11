@@ -3,6 +3,7 @@ layout: post
 title: "Keyword: Evil"
 author: myabc
 categories: me
+tags:   [technology, Google, climate]
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title: "Getting Started with DataMapper on JRuby"
 author: myabc
 categories: code
+tags:       [jruby, dataobjects, datamapper, orm, merb, tutorials]
 ---
 
 Underneath DataMapper (at least if you haven't bitten the [NoSQL][nosql] bullet

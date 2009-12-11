@@ -3,6 +3,7 @@ layout: post
 title: "Interlude"
 author: myabc
 categories: me
+tags:   [politics, election08, obama]
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title: "Americans Away from Home"
 author: myabc
 categories: me
+tags:   [politics, election08, obama]
 ---
 
 

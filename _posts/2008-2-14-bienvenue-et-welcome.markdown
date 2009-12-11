@@ -3,6 +3,7 @@ layout: post
 title: "Bienvenue et Welcome"
 author: myabc
 categories: code
+tags:   [metablogging]
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title: "Changes behind the scenes"
 author: myabc
 categories: me
+tags:   [metablogging, software, writing]
 ---
 
 

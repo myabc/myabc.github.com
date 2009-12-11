@@ -3,6 +3,7 @@ layout: post
 title: "Just words?"
 author: myabc
 categories: me
+tags:   [politics, election08, obama]
 ---
 
 
