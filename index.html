@@ -4,28 +4,5 @@ title:  Various Musings
 ---
 
 {% for post in site.posts offset: 0 limit: 5 %}
-<div id="content">
-  <div id="wrap-post">
-    &nbsp;
-  </div>
-  <div id="meta-post">
-    <div id="meta-title">
-      <h1><a href="{{ post.id }}.html">{{ post.title }}</a></h1>
-    </div>
-    <div id="meta-date">
-      <p>{{ post.date | date: "%d %b, %Y" }}</p>
-    </div>
-    <div id="clear-float">
-    </div>
-  </div>
-  <div id="post-content">
-    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-  </div>
-  <div id="wrap-post">
-    &nbsp;
-  </div>
-  <div id="separator-post">
-    &nbsp;
-  </div>
-</div>
+  {% include post_item.html %}
 {% endfor %}
