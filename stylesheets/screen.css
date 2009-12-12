@@ -98,7 +98,7 @@ body.bp .first { margin-left: 0; padding-left: 0; }
 body.bp .last { margin-right: 0; padding-right: 0; }
 body.bp .top { margin-top: 0; padding-top: 0; }
 body.bp .bottom { margin-bottom: 0; padding-bottom: 0; }
-body.bp .showgrid { background: url('/images/grid.png?1255172044'); }
+body.bp .showgrid { background: url('/images/grid.png?1259179649'); }
 body.bp .error { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
 body.bp .error a { color: #8a1f11; }
 body.bp .notice { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fff6bf; color: #514721; border-color: #ffd324; }
@@ -160,6 +160,16 @@ form.bp textarea { width: 390px; height: 250px; }
 #home { margin: 0; width: 330px; float: left; }
 
 #menu-right { padding-top: 170px; padding-left: 20px; padding-right: 20px; margin: 0; width: 190px; float: left; }
+
+#menu-down-left { padding-top: 0px; padding-left: 20px; padding-right: 20px; margin: 0; width: 190px; float: left; }
+#menu-down-left a, #menu-down-left h3 { color: #451c23 !important; text-decoration: none !important; }
+#menu-down-left a:hover, #menu-down-left h3:hover { color: #a69c91 !important; }
+
+#menu-down-center { margin: 0; width: 330px; float: left; }
+
+#menu-down-right { padding-top: 0px; padding-left: 20px; padding-right: 20px; margin: 0; width: 190px; float: left; text-align: right; }
+#menu-down-right a, #menu-down-right h3 { color: #451c23 !important; text-decoration: none !important; }
+#menu-down-right a:hover, #menu-down-right h3:hover { color: #a69c91 !important; }
 
 #search input { background-color: #ad7f6b; border: none; }
 

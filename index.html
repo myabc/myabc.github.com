@@ -3,6 +3,32 @@ layout: default
 title:  Various Musings
 ---
 
-{% for post in site.posts offset: 0 limit: 5 %}
+{% for post in paginator.posts %}
+  
   {% include post_item.html %}
+
 {% endfor %}
+
+<div class="paginator" id="separator-post">
+  <div id="menu-down-left">
+    {% if paginator.next_page %}
+      <h3><a href="/page{{ paginator.next_page }}/">older posts</a></h3>
+    {% endif %}
+  </div>
+  <div id="menu-down-center">
+    &nbsp;
+  </div>
+  <div id="menu-down-right">
+    {% if paginator.previous_page %}
+      <h3><a href="
+        {% if paginator.previous_page == 1 %}
+          /
+        {% else %}
+          /page{{ paginator.previous_page }}
+        {% endif %}">newer posts</a></h3>
+      {% endif %}
+  </div>
+  <div id="clear-float">
+  </div>
+</div>
+
