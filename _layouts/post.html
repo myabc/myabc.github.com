@@ -12,45 +12,47 @@ if (location.href.match(/localhost/)) {
 
 
 
-<div class="content">
-  <div class="wrap-post">
-    &nbsp;
-  </div>
-  <div class="meta-post-wide">
-    <div class="meta-title">
-      <h1>{{ page.title }}</h1>
+<section class="content">
+  <article>
+    <div class="wrap-post">
+      &nbsp;
     </div>
-    <div class="meta-date">
-      <p>{{ page.date | date: "%d %b, %Y" }}</p>
+    <header class="meta-post-wide">
+      <div class="meta-title">
+        <h1>{{ page.title }}</h1>
+      </div>
+      <div class="meta-date">
+        <p><time datetime="{{ post.date | date_to_xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time></p>
+      </div>
+      <div class="clear-float">
+      </div>
+    </header>
+    <div class="post-content-wide">
+      {{ content }}
     </div>
-    <div class="clear-float">
+    <div class="wrap-post">
+      &nbsp;
     </div>
-  </div>
-  <div class="post-content-wide">
-    {{ content }}
-  </div>
-  <div class="wrap-post">
-    &nbsp;
-  </div>
-  <div class="separator-post">
-    &nbsp;
-  </div>
-  <div class="wrap-post">
-    &nbsp;
-  </div>
-  <div class="post-content">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript" src="http://disqus.com/forums/myabc/embed.js"></script>
-    <noscript><a href="http://myabc.disqus.com/?url=ref">View the discussion thread.</a></noscript>
-    <!--    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> -->
-  </div>
-  <div class="wrap-post">
-    &nbsp;
-  </div>
-  <div class="separator-post">
-    &nbsp;
-  </div>
-</div>
+    <div class="separator-post">
+      &nbsp;
+    </div>
+    <div class="wrap-post">
+      &nbsp;
+    </div>
+    <div class="post-content">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript" src="http://disqus.com/forums/myabc/embed.js"></script>
+      <noscript><a href="http://myabc.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+      <!--    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> -->
+    </div>
+    <div class="wrap-post">
+      &nbsp;
+    </div>
+    <div class="separator-post">
+      &nbsp;
+    </div>
+  </article>
+</section>
 
 <script type="text/javascript">
 //<![CDATA[

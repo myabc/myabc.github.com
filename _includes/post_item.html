@@ -1,4 +1,4 @@
-<div class="content">
+<section class="content">
   <div class="wrap-post">
     &nbsp;
   </div>
@@ -7,7 +7,7 @@
       <h1><a href="{{ post.id }}.html">{{ post.title }}</a></h1>
     </div>
     <div class="meta-date">
-      <p>{{ post.date | date: "%d %b, %Y" }}</p>
+      <p><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %Y" }}</time></p>
     </div>
     <div class="clear-float">
     </div>
@@ -21,4 +21,4 @@
   <div class="separator-post">
     &nbsp;
   </div>
-</div>
+</section>

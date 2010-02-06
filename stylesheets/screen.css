@@ -11,6 +11,8 @@ table { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inhe
 
 a img { border: none; }
 
+article, aside, details, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
 @font-face { font-family: 'Titillium1'; src: url(TitilliumMaps26L004.otf) format('opentype'); }
 
 @font-face { font-family: 'Titillium2'; src: url(TitilliumMaps26L003.otf) format('opentype'); }
