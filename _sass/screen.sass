@@ -1,36 +1,21 @@
-// This import applies a global reset to any page that imports this stylesheet.
 @import blueprint/reset
-
-// To configure blueprint, edit the partials/base.sass file.
 @import partials/base
 
-// Import all the default blueprint modules so that we can access their mixins.
 @import blueprint
-
-// Import the non-default scaffolding module.
-// @import blueprint/modules/scaffolding.sass
-// @import blueprint/modules/colors.sass
-
-// To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
-// +blueprint
-
 @import partials/html5_reset.sass
 @import partials/fonts.sass
 
-//Recommended Blueprint configuration with scoping and semantic layout:
 +blueprint-typography
 
-//+blueprint-scaffolding("body.bp")
 body.bp
   +blueprint-utilities
   +blueprint-debug
   +blueprint-interaction
-  // Remove the scaffolding when you're ready to start doing visual design.
-  // Or leave it in if you're happy with how blueprint looks out-of-the-box
-  background: #343434
+
+  background: #fff
   text-align: center
-  margin: 0 auto
-  width: 800px
+  margin:     0 auto
+  width:      800px
 
 #container
   text-align: left
@@ -39,22 +24,16 @@ form.bp
   +blueprint-form
 
 .wrap-post
-  background-image: url(/images/band2.png)
   background-repeat: repeat-y
 
 .separator-post
-  background-image: url(/images/band8.png)
   background-repeat: repeat-y
 
 .meta-post
   padding-top: 5px
-  background-image: url(/images/band3.png)
-  background-repeat: repeat-y
 
 .meta-post-wide
   padding-top: 5px
-  background-image: url(/images/band11.png)
-  background-repeat: repeat-y
 
 .meta-title
   margin: 0
@@ -70,8 +49,6 @@ form.bp
   float: left
 
 .post-content
-  background-image: url(/images/band4.png)
-  background-repeat: repeat-y
   width: 730px
   padding-left: 35px
   padding-right: 30px
@@ -98,8 +75,6 @@ form.bp
       color: white
 
 .post-content-wide
-  background-image: url(/images/band10.png)
-  background-repeat: repeat-y
   width: 730px
   padding-left: 35px
   padding-right: 30px
@@ -134,16 +109,13 @@ form.bp
   clear: both
 
 #menu
-  background-image: url(/images/band1.png)
-  background-repeat: repeat-y
+  //
 
 #header
-  background-image: url(/images/band8.png)
-  background-repeat: repeat-y
+  //
 
 #footer
-  background-image: url(/images/band9.png)
-  background-repeat: repeat-y
+  //
 
 #menu-left
   padding-top: 170px
@@ -200,8 +172,8 @@ form.bp
 
 #search
   input
-    background-color: #ad7f6b
-    border: none
+    background-color: #fff
+    border: 1px solid #451c23
 
 #image-left
   margin: 0
