@@ -1,10 +1,8 @@
-# Require any additional compass plugins here.
-project_type = :stand_alone
-# Set this to the root of your project when deployed:
-http_path = "/"
-css_dir = "stylesheets"
-sass_dir = "_sass"
-images_dir = "images"
-output_style = :compact
-# To enable relative paths to assets via compass helper functions. Uncomment:
+project_type  = :stand_alone
+http_path     = '/'
+css_dir       = 'stylesheets'
+sass_dir      = '_sass'
+images_dir    = 'images'
+output_style  = :compact
+line_comments = false
 # relative_assets = true
