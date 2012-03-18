@@ -22,7 +22,7 @@ if (location.href.match(/localhost/)) {
         <h1>{{ page.title }}</h1>
       </div>
       <div class="meta-date">
-        <p><time datetime="{{ post.date | date_to_xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time></p>
+        <p><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time></p>
       </div>
       <div class="clear-float">
       </div>
