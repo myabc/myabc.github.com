@@ -3,10 +3,16 @@ GEM
   specs:
     albino (1.3.3)
       posix-spawn (>= 0.3.6)
+    chunky_png (1.2.5)
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
+    compass (0.12.1)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
     directory_watcher (1.4.1)
     fast-stemmer (1.0.0)
+    fssm (0.2.8.1)
     jekyll (0.11.2)
       albino (~> 1.3)
       classifier (~> 1.3)
@@ -20,11 +26,13 @@ GEM
       syntax (>= 1.0.0)
     posix-spawn (0.3.6)
     rdiscount (1.6.8)
+    sass (3.1.15)
     syntax (1.0.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass (~> 0.12.1)
   jekyll
   rdiscount
