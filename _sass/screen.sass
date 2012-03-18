@@ -1,9 +1,11 @@
+@import compass/css3
 @import blueprint/reset
 @import partials/base
 
 @import blueprint
-@import partials/html5_reset.sass
-@import partials/fonts.sass
+@import partials/html5_reset
+@import partials/fonts
+@import partials/code
 
 +blueprint-typography
 
@@ -52,13 +54,6 @@ form.bp
 .post-content-wide
   a
     text-decoration: none
-  code, pre
-    color: black
-    opacity: 1
-  div.highlight
-    padding: 5px 10px
-    code, pre
-      color: white
 
 #disqus_thread
   p, li, span, a, h1, h2, h3, pre, code
