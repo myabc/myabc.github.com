@@ -13,9 +13,6 @@ table { border-collapse: separate; border-spacing: 0; vertical-align: middle; }
 
 a img { border: none; }
 
-/*blueprint_grid_columns = 24 */
-/*blueprint_container_size = 950px */
-/*blueprint_grid_margin  = 10px */
 article, aside, details, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
 @font-face { font-family: "Titillium1"; src: url(TitilliumMaps26L004.otf) format("opentype"); }
