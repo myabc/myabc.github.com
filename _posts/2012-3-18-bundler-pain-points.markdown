@@ -146,11 +146,12 @@ When it comes to working with the host application or library, just make sure `B
     BUNDLE_GEMFILE=Gemfile.local rake spec
     BUNDLE_GEMFILE=Gemfile.local rails server
 
-of course you can wrap this into a script,
+of course you can wrap this into a shell function,
 
     local_gemfile_on
     local_gemfile_off
 
+(See the [gist](https://gist.github.com/2126969) for example functions you can add to your `.bash_profile`)
 
 Keeping more than one `Gemfile` is, of course, a big pain. So, use Rake to keep the copy in sync:
 
