@@ -33,19 +33,30 @@ input[type="checkbox"], input[type="radio"] { -webkit-box-sizing: border-box; -m
 
 textarea { overflow: auto; }
 
-body { font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Helvetica", sans-serif; font-size: 1em; line-height: 1.5em; }
+body { font-family: "DIN Next W01 Regular", sans-serif; font-size: 1em; line-height: 1.5em; }
 
-h1 { font-size: 2em; line-height: 3em; }
+h1 { font-family: "DINNextW01-CondensedBol"; font-size: 2em; line-height: 3em; }
 
-h2 { font-size: 1.2em; line-height: 3em; }
+h2 { font-family: "DINNextW01-CondensedBol"; font-size: 1.2em; line-height: 3em; }
 
-h3, h4, h5, h6 { font-size: 1em; }
+h3, h4, h5, h6 { font-family: "DINNextW01-CondensedBol"; font-size: 1em; }
 
 footer#colophon p { font-size: 0.825em; }
 
-header#site-header, footer#colophon, section.content { width: 70.5em; margin: 0 auto; }
+header#site-header, footer#colophon { width: 70.5em; margin: 0 auto; }
 
-section.content article.excerpt { float: left; width: 34.5em; }
+.content-plus-menu { width: 70.5em; margin: 0 auto; }
+
+section.content { float: left; width: 61.5em; }
+
+section.menu { float: left; width: 7.5em; }
+
+section.content article.excerpt { float: left; width: 30em; }
+section.content article.excerpt h2, section.content article.excerpt p { padding-left: 2em; padding-right: 2em; }
+
+#space-header { float: left; width: 61.5em; }
+
+#content-header { float: left; width: 7.5em; }
 
 footer { clear: both; }
 

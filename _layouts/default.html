@@ -15,8 +15,9 @@
   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
   <link rel="stylesheet" href="/stylesheets/jquery.tweet.css"   type="text/css" media="screen" />
-  <script type="text/javascript" src="http://use.typekit.com/bvk2vra.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript" src="http://fast.fonts.com/jsapi/ae5dd709-a741-4e0d-b746-cc09f435bffb.js"></script>
+  <!--<script type="text/javascript" src="http://use.typekit.com/bvk2vra.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
   <link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico" />
 
   <script type='text/javascript'>
@@ -44,9 +45,14 @@
 
 <body>
   {% include header.html %}
-  <section class="content">
-    {{ content }}
-  </section>
+  <div class="content-plus-menu">
+    <section class="content">
+      {{ content }}
+    </section>
+    <section class="menu">
+      just some text
+    </section>
+  </div>
   {% include footer.html %}
 
   <script type="text/javascript">

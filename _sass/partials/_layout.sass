@@ -1,12 +1,36 @@
 header#site-header,
-footer#colophon,
-section.content
+footer#colophon
   +width(16)
   margin: 0 auto
 
+.content-plus-menu
+  +width(16)
+  margin: 0 auto
+
+section.content
+  float: left
+  +width(14)
+
+section.menu
+  float: left
+  +width(2)
+
 section.content article.excerpt
   float: left
-  +width(8)
+  +width(7)
+  //:padding-left 2em
+  h2, p
+    :padding-left 2em
+    :padding-right 2em
+
+#space-header
+  float: left
+  +width(14)
+
+#content-header
+  float: left
+  +width(2)
+
 
 footer
   clear: both
