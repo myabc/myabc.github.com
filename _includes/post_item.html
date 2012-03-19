@@ -1,13 +1,11 @@
 <article class="excerpt">
-  <div class="meta-post">
-    <div class="meta-title">
-      <h2><a href="{{ post.id }}.html">{{ post.title }}</a></h2>
-    </div>
-    <div class="meta-date">
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %Y" }}</time>
-    </div>
+  <div class="meta-title">
+    <h2><a href="{{ post.id }}.html">{{ post.title }}</a></h2>
   </div>
   <div class="post-content">
     <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
+  </div>
+  <div class="meta-date">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %Y" }}</time>
   </div>
 </article>
