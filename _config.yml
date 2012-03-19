@@ -1,5 +1,5 @@
 safe:       true
 auto:       true
 pygments:   true
-paginate:   5
+paginate:   6
 markdown:   rdiscount

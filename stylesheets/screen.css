@@ -33,17 +33,6 @@ input[type="checkbox"], input[type="radio"] { -webkit-box-sizing: border-box; -m
 
 textarea { overflow: auto; }
 
-/*  These are easy to forget */
-::selection { background: red; color: white; }
-
-::-moz-selection { background: red; color: white; }
-
-img::selection { background: transparent; }
-
-img::-moz-selection { background: transparent; }
-
-body { -webkit-tap-highlight-color: rgba(255, 0, 0, 0.62); }
-
 body { font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Helvetica", sans-serif; font-size: 1em; line-height: 1.5em; }
 
 h1 { font-size: 2em; line-height: 3em; }
@@ -52,14 +41,41 @@ h2 { font-size: 1.2em; line-height: 3em; }
 
 h3, h4, h5, h6 { font-size: 1em; }
 
+footer#colophon p { font-size: 0.825em; }
+
 header#site-header, footer#colophon, section.content { width: 70.5em; margin: 0 auto; }
 
+section.content article.excerpt { float: left; width: 34.5em; }
+
+footer { clear: both; }
+
 /*  An easy way to zoom your entire layout in or out (as long as it's set in ems). Just change the media queries to activate them. Assuming your base font-size is 16: - the first one zooms out by a factor of (16-2)/16 = 0.875 - the second one zooms in by a factor of (16+2)/16 = 1.125 */
+a:link { color: black; }
+
+a:visited { color: #666666; }
+
+h1, h2 { color: #dc143c; }
+h1 a:link, h1 a:visited, h2 a:link, h2 a:visited { color: inherit; text-decoration: none; }
+
+::selection { background: #dc143c; color: white; }
+
+::-moz-selection { background: #dc143c; color: white; }
+
+img::selection { background: transparent; }
+
+img::-moz-selection { background: transparent; }
+
+body { -webkit-tap-highlight-color: rgba(255, 0, 0, 0.62); }
+
+article { border-bottom: 1px solid #dc143c; }
+
+#site-header-wrapper { background-color: #dc143c; border-bottom: 0.5em solid #333333; }
+
 code { background-color: #eeeeee; border: 1px solid #cccccc; }
 
 pre, div.highlight pre { background-color: #eeeeee; border: 1px solid #cccccc; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; padding: 5px; overflow: scroll; }
 pre > code, div.highlight pre > code { border: none; }
 
-a:link { color: black; }
-
-a:visited { color: #666666; }
+#links-menu ul { margin: 0; padding: 0; border: 0; overflow: hidden; *zoom: 1; }
+#links-menu ul > li { list-style-image: none; list-style-type: none; margin-left: 0; display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; white-space: nowrap; }
+#links-menu ul > li { *display: inline; }
