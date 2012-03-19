@@ -33,20 +33,20 @@ input[type="checkbox"], input[type="radio"] { -webkit-box-sizing: border-box; -m
 
 textarea { overflow: auto; }
 
-body { font-family: "DIN Next W01 Regular", sans-serif; font-size: 1em; line-height: 1.5em; }
+body { font-family: "ff-meta-serif-web-pro-1", "ff-meta-serif-web-pro-2", sans-serif; font-size: 1em; line-height: 1.5em; }
 
-h1 { font-family: "DINNextW01-CondensedBol"; font-size: 2em; line-height: 3em; }
+h1 { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 2em; line-height: 3em; }
 
-h2 { font-family: "DINNextW01-CondensedBol"; font-size: 1.2em; line-height: 3em; }
+h2 { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 1.2em; line-height: 3em; }
 
-h3, h4, h5, h6 { font-family: "DINNextW01-CondensedBol"; font-size: 1em; }
+h3, h4, h5, h6 { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 1em; }
 
-time { font-family: "DINNextW01-CondensedReg"; font-size: 1em; }
+time { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 0.825em; }
 
 footer#colophon p { font-size: 0.825em; }
 
-.square-menu h2 { font-family: "DINNextW01-CondensedBol"; font-size: 1em; }
-.square-menu p { font-family: "DINNextW01-CondensedReg"; font-size: 0.825em; }
+.square-menu h2 { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 1em; }
+.square-menu p { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 0.825em; }
 
 header#site-header, footer#colophon { width: 70.5em; margin: 0 auto; }
 
@@ -59,6 +59,7 @@ section.menu { float: left; width: 7.5em; }
 section.content article.excerpt { float: left; width: 30em; }
 section.content article.excerpt p, section.content article.excerpt time { padding-left: 2em; padding-right: 2em; }
 section.content article.excerpt h2 { padding-right: 2em; padding-top: 1em; }
+section.content article.excerpt:nth-child(2n+1) { clear: both; }
 
 #space-header { float: left; width: 61.5em; }
 
