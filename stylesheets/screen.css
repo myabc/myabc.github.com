@@ -15,7 +15,7 @@ a img { border: none; }
 
 article, aside, details, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-h1 { font-family: "DIN Next W01 Bold"; font-weight: bold; text-transform: lowercase; color: #a69c91; }
+h1 { font-weight: bold; text-transform: lowercase; color: #a69c91; }
 h1 a { color: #a69c91; text-decoration: none; }
 h1 a:hover { text-decoration: underline; }
 
@@ -36,7 +36,7 @@ code { background-color: #eeeeee; border: 1px solid #cccccc; }
 pre, div.highlight pre { background-color: #eeeeee; border: 1px solid #cccccc; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; padding: 5px; overflow: scroll; }
 pre > code, div.highlight pre > code { border: none; }
 
-body { line-height: 1.5; font-family: "DIN Next W01 Regular", "Verdana", sans-serif; color: black; font-size: 87.5%; }
+body { line-height: 1.5; font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Helvetica", sans-serif; color: black; font-size: 87.5%; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; color: black; }
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0; }
