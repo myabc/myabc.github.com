@@ -151,7 +151,7 @@ of course you can wrap this into a shell function,
     local_gemfile_on
     local_gemfile_off
 
-(See the [gist](https://gist.github.com/2126969) for example functions you can add to your `.bash_profile`)
+(See the [gist](https://gist.github.com/2126969) for example functions you can add to your `.bash_profile`. You might also consider adding your current `BUNDLE_GEMFILE` to `PS1`)
 
 Keeping more than one `Gemfile` is, of course, a big pain. So, use Rake to keep the copy in sync:
 
