@@ -1,3 +1,47 @@
+/*
+ *  Frameless           <http://framelessgrid.com/>
+ *  by Joni Korpi       <http://jonikorpi.com/>
+ *  licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/>
+
+
+$font-size: 16px
+$em: $font-size / 1em
+$line-height: 24px
+
+$column: 48px
+$gutter: 24px
+
+
+//
+// Column-widths in variables, in ems
+//
+
+$cols1: (1 * ($column + $gutter) - $gutter) / $em
+$cols2: (2 * ($column + $gutter) - $gutter) / $em
+$cols3: (3 * ($column + $gutter) - $gutter) / $em
+$cols4: (4 * ($column + $gutter) - $gutter) / $em
+$cols5: (5 * ($column + $gutter) - $gutter) / $em
+$cols6: (6 * ($column + $gutter) - $gutter) / $em
+$cols7: (7 * ($column + $gutter) - $gutter) / $em
+$cols8: (8 * ($column + $gutter) - $gutter) / $em
+$cols9: (9 * ($column + $gutter) - $gutter) / $em
+$cols10: (10 * ($column + $gutter) - $gutter) / $em
+$cols11: (11 * ($column + $gutter) - $gutter) / $em
+$cols12: (12 * ($column + $gutter) - $gutter) / $em
+$cols13: (13 * ($column + $gutter) - $gutter) / $em
+$cols14: (14 * ($column + $gutter) - $gutter) / $em
+$cols15: (15 * ($column + $gutter) - $gutter) / $em
+$cols16: (16 * ($column + $gutter) - $gutter) / $em
+
+//
+// Column-widths in a function, in ems
+//
+
+=width($cols: 1)
+  width: ($cols * ($column + $gutter) - $gutter) / $em
+
+
+
 $font_color: #000
 $link_color: #631F66
 
@@ -9,6 +53,6 @@ $link_visited_color:  $link_color - #333
 // css class conflicts with Jekyll / Pygments
 $highlight_color: rgba(0, 0, 0, 0.5)
 
-$blueprint-font-family:       "ff-dagny-web-pro-1","ff-dagny-web-pro-2", 'Helvetica', sans-serif
+$base-font-family:       "ff-dagny-web-pro-1","ff-dagny-web-pro-2", 'Helvetica', sans-serif
 $blueprint-fixed-font-family: 'andale mono', 'lucida console', monospace
 $blueprint-font-size:         14px

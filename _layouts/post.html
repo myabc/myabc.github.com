@@ -10,48 +10,24 @@ if (location.href.match(/localhost/)) {
 //]]>
 </script>
 
-
-
-<section class="content">
-  <article>
-    <div class="wrap-post">
-      &nbsp;
+<article>
+  <header class="meta-post-wide">
+    <div class="meta-title">
+      <h1>{{ page.title }}</h1>
     </div>
-    <header class="meta-post-wide">
-      <div class="meta-title">
-        <h1>{{ page.title }}</h1>
-      </div>
-      <div class="meta-date">
-        <p><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time></p>
-      </div>
-      <div class="clear-float">
-      </div>
-    </header>
-    <div class="post-content-wide">
-      {{ content }}
+    <div class="meta-date">
+      <p><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time></p>
     </div>
-    <div class="wrap-post">
-      &nbsp;
-    </div>
-    <div class="separator-post">
-      &nbsp;
-    </div>
-    <div class="wrap-post">
-      &nbsp;
-    </div>
-    <div class="post-content">
-      <div id="disqus_thread"></div>
-      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-    </div>
-    <div class="wrap-post">
-      &nbsp;
-    </div>
-    <div class="separator-post">
-      &nbsp;
-    </div>
-  </article>
-</section>
+  </header>
+  <div class="post-content-wide">
+    {{ content }}
+  </div>
+  <div class="post-content">
+    <div id="disqus_thread"></div>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</article>
 
 <script type="text/javascript">
   var disqus_shortname = 'myabc';

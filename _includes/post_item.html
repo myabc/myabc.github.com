@@ -1,24 +1,13 @@
-<section class="content">
-  <div class="wrap-post">
-    &nbsp;
-  </div>
+<article>
   <div class="meta-post">
     <div class="meta-title">
-      <h1><a href="{{ post.id }}.html">{{ post.title }}</a></h1>
+      <h2><a href="{{ post.id }}.html">{{ post.title }}</a></h2>
     </div>
     <div class="meta-date">
-      <p><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %Y" }}</time></p>
-    </div>
-    <div class="clear-float">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b, %Y" }}</time>
     </div>
   </div>
   <div class="post-content">
-    <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+    <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
   </div>
-  <div class="wrap-post">
-    &nbsp;
-  </div>
-  <div class="separator-post">
-    &nbsp;
-  </div>
-</section>
+</article>

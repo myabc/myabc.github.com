@@ -1,191 +1,65 @@
-html { margin: 0; padding: 0; border: 0; }
+/*  Frameless           <http://framelessgrid.com/> by Joni Korpi       <http://jonikorpi.com/> licensed under CC0  <http://creativecommons.org/publicdomain/zero/1.0/> */
+/*  Margin, padding, and border resets except for form elements */
+body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section { margin: 0; padding: 0; border: 0; }
 
-.bp-reset-element, body, h1, h2, h3, h4, h5, h6, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, blockquote, q, th, td, caption, table, div, span, object, iframe, p, pre, a, abbr, acronym, address, code, del, dfn, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+/*  Consistency fixes adopted from http://necolas.github.com/normalize.css/ */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, audio, canvas, video { display: block; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+html { height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-blockquote, q { quotes: "" ""; }
-blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+body { min-height: 100%; font-size: 100%; }
 
-th, td, caption { float: none !important; text-align: left; font-weight: normal; vertical-align: middle; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 
-table { border-collapse: separate; border-spacing: 0; vertical-align: middle; }
+sup { top: -0.5em; }
 
-a img { border: none; }
+sub { bottom: -0.25em; }
 
-article, aside, details, figure, footer, header, hgroup, menu, nav, section { display: block; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 
-h1 { font-weight: bold; text-transform: lowercase; color: #a69c91; }
-h1 a { color: #a69c91; text-decoration: none; }
-h1 a:hover { text-decoration: underline; }
+b, strong { font-weight: bold; }
 
-h2 { color: #68454c; margin-top: 0.5em; margin-bottom: 0.1em; }
+abbr[title] { border-bottom: 1px dotted; }
 
-h3#comments { font-size: 1.6em; }
+table { border-collapse: collapse; border-spacing: 0; }
 
-#header p { color: #ad7f6b; margin: 0; }
-#header a { color: #ad7f6b; text-decoration: none; }
-#header a:hover { text-decoration: underline; }
+a img, img { -ms-interpolation-mode: bicubic; border: 0; }
 
-#footer p { color: #68454c; margin: 0; }
-#footer a { color: #68454c; text-decoration: none; }
-#footer a:hover { text-decoration: underline; }
+input, textarea, button, select { margin: 0; font-size: 100%; line-height: normal; vertical-align: baseline; }
 
+button, html input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+input[type="checkbox"], input[type="radio"] { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+
+textarea { overflow: auto; }
+
+/*  These are easy to forget */
+::selection { background: red; color: white; }
+
+::-moz-selection { background: red; color: white; }
+
+img::selection { background: transparent; }
+
+img::-moz-selection { background: transparent; }
+
+body { -webkit-tap-highlight-color: rgba(255, 0, 0, 0.62); }
+
+body { font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Helvetica", sans-serif; font-size: 1em; line-height: 1.5em; }
+
+h1 { font-size: 2em; line-height: 3em; }
+
+h2 { font-size: 1.2em; line-height: 3em; }
+
+h3, h4, h5, h6 { font-size: 1em; }
+
+header#site-header, footer#colophon, section.content { width: 70.5em; margin: 0 auto; }
+
+/*  An easy way to zoom your entire layout in or out (as long as it's set in ems). Just change the media queries to activate them. Assuming your base font-size is 16: - the first one zooms out by a factor of (16-2)/16 = 0.875 - the second one zooms in by a factor of (16+2)/16 = 1.125 */
 code { background-color: #eeeeee; border: 1px solid #cccccc; }
 
 pre, div.highlight pre { background-color: #eeeeee; border: 1px solid #cccccc; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; padding: 5px; overflow: scroll; }
 pre > code, div.highlight pre > code { border: none; }
 
-body { line-height: 1.5; font-family: "ff-dagny-web-pro-1", "ff-dagny-web-pro-2", "Helvetica", sans-serif; color: black; font-size: 87.5%; }
+a:link { color: black; }
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; color: black; }
-h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { margin: 0; }
-
-h1 { font-size: 3em; line-height: 1; margin-bottom: 0.50em; }
-
-h2 { font-size: 2em; margin-bottom: 0.75em; }
-
-h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1.00em; }
-
-h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
-
-h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.50em; }
-
-h6 { font-size: 1em; font-weight: bold; }
-
-p { margin: 0 0 1.5em; }
-p .left { display: inline; float: left; margin: 1.5em 1.5em 1.5em 0; padding: 0; }
-p .right { display: inline; float: right; margin: 1.5em 0 1.5em 1.5em; padding: 0; }
-
-a { text-decoration: underline; color: #631f66; }
-a:visited { color: #300033; }
-a:focus { color: #42204c; }
-a:hover { color: #42204c; }
-a:active { color: #ff1f66; }
-
-blockquote { margin: 1.5em; color: #666666; font-style: italic; }
-
-strong, dfn { font-weight: bold; }
-
-em, dfn { font-style: italic; }
-
-sup, sub { line-height: 0; }
-
-abbr, acronym { border-bottom: 1px dotted #666666; }
-
-address { margin: 0 0 1.5em; font-style: italic; }
-
-del { color: #666666; }
-
-pre { margin: 1.5em 0; white-space: pre; }
-
-pre, code, tt { font: 1em "andale mono", "lucida console", monospace; line-height: 1.5; }
-
-li ul, li ol { margin: 0; }
-
-ul, ol { margin: 0 1.5em 1.5em 0; padding-left: 1.5em; }
-
-ul { list-style-type: disc; }
-
-ol { list-style-type: decimal; }
-
-dl { margin: 0 0 1.5em 0; }
-dl dt { font-weight: bold; }
-
-dd { margin-left: 1.5em; }
-
-table { margin-bottom: 1.4em; width: 100%; }
-
-th { font-weight: bold; }
-
-thead th { background: #c3d9ff; }
-
-th, td, caption { padding: 4px 10px 4px 5px; }
-
-table.striped tr:nth-child(even) td, table tr.even td { background: #e5ecf9; }
-
-tfoot { font-style: italic; }
-
-caption { background: #eeeeee; }
-
-.quiet { color: #333333; }
-
-.loud { color: black; }
-
-body.bp { background: white; text-align: center; margin: 0 auto; width: 800px; }
-body.bp .clear { clear: both; }
-body.bp .nowrap { white-space: nowrap; }
-body.bp .clearfix { overflow: hidden; *zoom: 1; }
-body.bp .small { font-size: 0.8em; margin-bottom: 1.875em; line-height: 1.875em; }
-body.bp .large { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
-body.bp .first { margin-left: 0; padding-left: 0; }
-body.bp .last { margin-right: 0; padding-right: 0; }
-body.bp .top { margin-top: 0; padding-top: 0; }
-body.bp .bottom { margin-bottom: 0; padding-bottom: 0; }
-body.bp .feedback, body.bp .error, body.bp .alert, body.bp .notice, body.bp .success, body.bp .info { padding: 0.8em; margin-bottom: 1em; border: 2px solid #dddddd; }
-body.bp .error, body.bp .alert { background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
-body.bp .error a, body.bp .alert a { color: #8a1f11; }
-body.bp .notice { background: #fff6bf; color: #514721; border-color: #ffd324; }
-body.bp .notice a { color: #514721; }
-body.bp .success { background: #e6efc2; color: #264409; border-color: #c6d880; }
-body.bp .success a { color: #264409; }
-body.bp .info { background: #d5edf8; color: #205791; border-color: #92cae4; }
-body.bp .info a { color: #205791; }
-body.bp .hide { display: none; }
-body.bp .highlight { background: rgba(0, 0, 0, 0.5); }
-body.bp .added { background: #006600; color: white; }
-body.bp .removed { background: #990000; color: white; }
-
-#container { text-align: left; }
-
-form.bp label { font-weight: bold; }
-form.bp fieldset { padding: 1.4em; margin: 0 0 1.5em 0; }
-form.bp legend { font-weight: bold; font-size: 1.2em; }
-form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password] { margin: 0.5em 0; background-color: white; padding: 5px; }
-form.bp input.title { font-size: 1.5em; }
-form.bp textarea { margin: 0.5em 0; padding: 5px; }
-form.bp select { margin: 0.5em 0; }
-form.bp fieldset { border: 1px solid #cccccc; }
-form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password], form.bp textarea { background-color: #fff; border: 1px solid #bbbbbb; }
-form.bp input.text:focus, form.bp input.title:focus, form.bp input[type=email]:focus, form.bp input[type=text]:focus, form.bp input[type=password]:focus, form.bp textarea:focus { border-color: #666666; }
-form.bp select { background-color: #fff; border-width: 1px; border-style: solid; }
-form.bp input.text, form.bp input.title, form.bp input[type=email], form.bp input[type=text], form.bp input[type=password] { width: 300px; }
-form.bp textarea { width: 390px; height: 250px; }
-
-.meta-post { padding-top: 5px; }
-
-.meta-post-wide { padding-top: 5px; }
-
-.meta-title { margin: 0; margin-bottom: -10px; width: 655px; float: left; }
-
-.meta-date { margin: 0; padding-left: 5px; width: 110px; float: left; }
-
-.post-content a, .post-content-wide a { text-decoration: none; }
-
-#disqus_thread p, #disqus_thread li, #disqus_thread span, #disqus_thread a, #disqus_thread h1, #disqus_thread h2, #disqus_thread h3, #disqus_thread pre, #disqus_thread code { color: #451c23 !important; font-size: 100%; }
-
-.clear-float { clear: both; }
-
-#menu-left { padding-top: 170px; padding-left: 20px; padding-right: 20px; margin: 0; width: 190px; float: left; }
-
-#home { margin: 0; width: 330px; float: left; }
-
-#menu-right { padding-top: 170px; padding-left: 20px; padding-right: 20px; margin: 0; width: 190px; float: left; }
-
-#menu-down-left { padding-top: 0px; padding-left: 20px; padding-right: 20px; margin: 0; width: 190px; float: left; }
-#menu-down-left a, #menu-down-left h3 { color: #451c23 !important; text-decoration: none !important; }
-#menu-down-left a:hover, #menu-down-left h3:hover { color: #a69c91 !important; }
-
-#menu-down-center { margin: 0; width: 330px; float: left; }
-
-#menu-down-right { padding-top: 0px; padding-left: 20px; padding-right: 20px; margin: 0; width: 190px; float: left; text-align: right; }
-#menu-down-right a, #menu-down-right h3 { color: #451c23 !important; text-decoration: none !important; }
-#menu-down-right a:hover, #menu-down-right h3:hover { color: #a69c91 !important; }
-
-#search input { background-color: white; border: 1px solid #451c23; }
-
-#image-left { margin: 0; width: 100px; float: left; padding-left: 20px; padding-top: 20px; }
-
-#footer-text { margin: 0; width: 580px; float: left; padding-top: 20px; }
-
-#image-right { margin: 0; width: 100px; float: left; padding-top: 20px; }
+a:visited { color: #666666; }

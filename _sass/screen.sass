@@ -1,150 +1,18 @@
-@import compass/css3
-@import blueprint/reset
-@import partials/base
+@import "compass/css3"
+@import "compass/typography"
 
-@import blueprint
-@import partials/html5_reset
-@import partials/fonts
-@import partials/code
+@import "partials/base"
+@import "partials/html5_reset"
+@import "partials/typography"
+@import "partials/layout"
+@import "partials/code"
 
-+blueprint-typography
+a:link
+  color: #000
+a:visited
+  color: #666
 
-body.bp
-  +blueprint-utilities
-  //+blueprint-debug
-  +blueprint-interaction
 
-  background: #fff
-  text-align: center
-  margin:     0 auto
-  width:      800px
 
-#container
-  text-align: left
 
-form.bp
-  +blueprint-form
 
-//.wrap-post
-//  background-repeat: repeat-y
-//
-//.separator-post
-//  background-repeat: repeat-y
-
-.meta-post
-  padding-top: 5px
-
-.meta-post-wide
-  padding-top: 5px
-
-.meta-title
-  margin: 0
-  margin-bottom: -10px
-  width: 655px
-  float: left
-  //padding-left: 30px
-
-.meta-date
-  margin: 0
-  padding-left: 5px
-  width: 110px
-  float: left
-
-.post-content,
-.post-content-wide
-  a
-    text-decoration: none
-
-#disqus_thread
-  p, li, span, a, h1, h2, h3, pre, code
-    color: #451c23 !important
-    font-size: 100%
-
-.clear-float
-  clear: both
-
-#menu
-  //
-
-#header
-  //
-
-#footer
-  //
-
-#menu-left
-  padding-top: 170px
-  padding-left: 20px
-  padding-right: 20px
-  margin: 0
-  width: 190px
-  float: left
-
-#home
-  margin: 0
-  width: 330px
-  float: left
-
-#menu-right
-  padding-top: 170px
-  padding-left: 20px
-  padding-right: 20px
-  margin: 0
-  width: 190px
-  float: left
-
-#menu-down-left
-  padding-top: 0px
-  padding-left: 20px
-  padding-right: 20px
-  margin: 0
-  width: 190px
-  float: left
-  a, h3
-    color: #451c23 !important
-    text-decoration: none !important
-    &:hover
-      color: #a69c91 !important
-
-#menu-down-center
-  margin: 0
-  width: 330px
-  float: left
-
-#menu-down-right
-  padding-top: 0px
-  padding-left: 20px
-  padding-right: 20px
-  margin: 0
-  width: 190px
-  float: left
-  text-align: right
-  a, h3
-    color: #451c23 !important
-    text-decoration: none !important
-    &:hover
-      color: #a69c91 !important
-
-#search
-  input
-    background-color: #fff
-    border: 1px solid #451c23
-
-#image-left
-  margin: 0
-  width: 100px
-  float: left
-  padding-left: 20px
-  padding-top: 20px
-
-#footer-text
-  margin: 0
-  width: 580px
-  float: left
-  padding-top: 20px
-
-#image-right
-  margin: 0
-  width: 100px
-  float: left
-  padding-top: 20px

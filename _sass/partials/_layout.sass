@@ -1,0 +1,43 @@
+header#site-header,
+footer#colophon,
+section.content
+  +width(16)
+  margin: 0 auto
+
+/*
+ *  An easy way to zoom your entire layout in or out (as long as it's set in ems).
+ *  Just change the media queries to activate them.
+ *  Assuming your base font-size is 16:
+ *  - the first one zooms out by a factor of (16-2)/16 = 0.875
+ *  - the second one zooms in by a factor of (16+2)/16 = 1.125
+
+// @media screen and (max-width: 1px)
+//   body
+//     font-size: ($font-size - 2) / $em
+//
+// @media screen and (max-width: 1px)
+//   body
+//     font-size: ($font-size + 2) / $em
+//
+
+//@media screen
+//  @media (max-width: 16.875em)
+//    body
+//      font-size: ($font-size - 2) / $em
+//
+//  @media (max-width: 19.9375em)
+//    body
+//      font-size: ($font-size - 1) / $em
+//
+//  @media (min-width: 32.5em) and (max-width: 37.4375em)
+//    //, (min-width: 45em) and (max-width: 56.9375em), (min-width: 77.5em) and (max-width: 102.4375em), (min-width: 135em)
+//    body
+//      background-color: red
+//      font-size: ($font-size + 1) / $em
+//
+//  @media (min-width: 102.5em) and (max-width: 117.9375em)
+//    //, (min-width: 150em)
+//    body
+//      background-color: green
+//      font-size: ($font-size + 2) / $em
+//

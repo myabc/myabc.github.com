@@ -42,12 +42,12 @@
   <link rel="alternate" type="application/rss+xml" href="http://feeds.alexbcoles.com/alexbcoles" />
 </head>
 
-<body class="bp">
-  <div id="container" class="container">
-    {% include header.html %}
+<body>
+  {% include header.html %}
+  <section class="content">
     {{ content }}
-    {% include footer.html %}
-  </div>
+  </section>
+  {% include footer.html %}
 
   <script type="text/javascript">
   (function() {
