@@ -188,5 +188,4 @@ _What are your pain points?_
 
 [@FooBarWidget]:https://github.com/FooBarWidget
 [@mislav]:https://github.com/mislav
-[@indirect]:https://github.com/indirect
 [@josevalim]:(http://github.com/josevalim)
