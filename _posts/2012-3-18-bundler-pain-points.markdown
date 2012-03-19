@@ -109,7 +109,7 @@ The concept is **easy**: the solution for both problems is to employ multiple Ge
 
 Create more than one `Gemfile`, where you want to use different versions or a specify a tighter version than that defined in the `.gemspec`.
 
-I have seen this solution used by Ripple, for example:
+I have seen this solution used by [Ripple](http://seancribbs.com/ripple/), for example:
 
 {% highlight ruby %}
     # Taken from:
