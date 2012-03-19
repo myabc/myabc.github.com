@@ -96,7 +96,7 @@ Not being able to declare a dependency more than once makes the following things
   (perhaps working against a git repository of a dependency, or an Engine in git)
   _(problem B)_
 
-In fact, _problem B_ provided my initial motivation for investigating the whole question. At [Payango](http://payango.com/en), we are currently building a new platform for prepaid VISA cards; our previous platform was built as a monolithic Rails application, but the new platform is built on the foundations of a Service Oriented Architecture. For each given product on our platform, we have multiple applications running. To share code, we are employing Rails engines and internal libraries extensively.
+In fact, _problem B_ provided my initial motivation for investigating the whole question. At [Payango](http://payango.com/en), we are currently building a new platform for prepaid VISA cards; our previous platform was built as a monolithic Rails application, but the new platform is built on the foundations of a [Service-oriented Architecture](http://en.wikipedia.org/wiki/Service-oriented_architecture). For each given product on our platform, we have multiple applications running. To share code, we are employing Rails engines and internal libraries extensively.
 
 Of course, in a perfect world — and because we aim to keep concerns separate — our layers would be perfectly tested and respect their contracts. In this perfect world, we would never need to break down, debug or change views in our upstream library or Engine. Unfortunately — despite the best efforts and good design — we do sometimes need to work on a library and the host application simultaneously.
 
