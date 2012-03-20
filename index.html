@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Various Musings
+title:  various musings
 ---
 
 {% for post in paginator.posts %}
@@ -10,14 +10,6 @@ title:  Various Musings
 {% endfor %}
 
 <div class="paginator separator-post">
-  <div id="menu-down-left">
-    {% if paginator.next_page %}
-      <h3><a href="/page{{ paginator.next_page }}/">older posts</a></h3>
-    {% endif %}
-  </div>
-  <div id="menu-down-center">
-    &nbsp;
-  </div>
   <div id="menu-down-right">
     {% if paginator.previous_page %}
       <h3><a href="
@@ -28,6 +20,9 @@ title:  Various Musings
         {% endif %}">newer posts</a></h3>
       {% endif %}
   </div>
-  <div class="clear-float">
+  <div id="menu-down-left">
+    {% if paginator.next_page %}
+      <h3><a href="/page{{ paginator.next_page }}/">older posts</a></h3>
+    {% endif %}
   </div>
 </div>

@@ -13,7 +13,7 @@ h1, h2
     text-decoration:  none
 
 time
-  color: gray
+  color: $gray
   border-bottom: 1px solid $crimson
 
 \::selection
@@ -37,12 +37,30 @@ body
   background: $crimson
   p, h2
     color: white
+    a, a:hover, a:visited
+      color: white
+
+.footer-right
+  color: $gray
+  p, a, a:visited
+    color: $gray
+  img
+    opacity: 0.7
+    filter: alpha(opacity=70)
 
 #site-header-wrapper
   background-color: $crimson
   border-bottom: 0.5em solid #333
 
-.meta-title
+header
+  p
+    color: $gray
 
-.meta-date
-  //float:  right
+.paginator
+  h3
+    a, a:visited
+      color: $gray
+
+footer#colophon
+  p
+    background: $crimson

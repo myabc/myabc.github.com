@@ -1,7 +1,12 @@
-header#site-header,
-footer#colophon
+header#site-header
   +width(16)
   margin: 0 auto
+
+header
+  p
+    text-align:   right
+  h1
+    padding-top:  1em
 
 .content-plus-menu
   +width(16)
@@ -17,12 +22,13 @@ section.menu
 
 section.content article.excerpt
   float: left
+  overflow: hidden
   +width(7)
   p, time
-    :padding-left 2em
-    :padding-right 2em
+    :padding-left 32px
+    :padding-right 32px
   h2
-    :padding-right 2em
+    :padding-right 32px
     :padding-top 1em
   &:nth-child(2n+1)
     clear: both
@@ -39,9 +45,26 @@ section.content article.excerpt
   :margin-top 2em
   :padding-left .5em
   :padding-right .5em
+  h2
+    padding-top: 1em
+    padding-bottom: .5em
 
-footer
+.footer-right
+  +width(2)
+  :margin-top 2em
+  :padding-left 0em
+  :padding-right 1em
+
+.paginator
+  +width(13)
+  float: left
+  :margin-top 2em
+  padding: 2em
+
+footer#colophon
   clear: both
+  +width(16)
+  :padding-top 2em
 
 /*
  *  An easy way to zoom your entire layout in or out (as long as it's set in ems).

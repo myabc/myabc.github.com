@@ -54,7 +54,7 @@
         <p>Alex B Coles is a web developer</p>
       </div>
       <div class="square-menu">
-        <h2>follow me</h2>
+        <h2>follow & contact</h2>
         <p>
           <a href="http://twitter.com/myabc">Twitter</a>
           <a href="http://feeds.alexbcoles.com/alexbcoles">RSS</a>
@@ -100,18 +100,37 @@
       <div class="square-menu">
         <h2>categories</h2>
         <p>
-          <a href="http://github.com/myabc">Code</a>
+          <a href="/code/">Code</a>
           </br>
-          <a href="http://delicious.com/alexbcoles">Me</a>
+          <a href="/me/">Me</a>
         </p>
       </div>
       <div class="square-menu">
         <h2>search</h2>
         <p>[Search Box]</p>
       </div>
+      <div class="footer-right">
+        <p>
+          © Copyright {{ site.time | date: "%Y" }}, Alex B Coles.<br/>
+          This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License</a>.<br/>
+
+          Site designed and developed using
+          <a href="http://github.com/mojombo/jekyll">Jekyll</a>,
+          <a href="http://framelessgrid.com/">Frameless</a> &amp;
+          <a href="http://wiki.github.com/chriseppstein/compass">Compass</a>.
+
+          Hosting by <a href="http://github.com">GitHub</a>.
+          Comments powered by <a href="http://disqus.com">Disqus</a>.<br/>
+          <br/>
+        </p>
+        <div id="image-right">
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">
+            <img alt="Creative Commons License" style="border-width:0" src="/images/cc70.png"/>
+          </a>
+        </div>
+      </div>
     </section>
   </div>
-  {% include footer.html %}
 
   <script type="text/javascript">
   (function() {
@@ -121,5 +140,8 @@
     document.documentElement.firstChild.appendChild(ga);
   })();
   </script>
+
+  {% include footer.html %}
+
 </body>
 </html>
