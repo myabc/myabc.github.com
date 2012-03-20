@@ -48,7 +48,7 @@ There is a [proposal](https://github.com/carlhuda/bundler/issues/1636) from [@Fo
 
 Installing optional groups,
 
-    bundle install --with=postgresql
+    bundle install --with=postgres
 
 and in the `Gemfile`,
 
