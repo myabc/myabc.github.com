@@ -167,9 +167,8 @@ See the [gist](https://gist.github.com/2016633) for the full tasks.
 
 Two points to bear in mind when using this technique with Rails:
 
-- This will not handle code reloading: just because you do not have to `bundle update` each time you want to pull in the latest version of your library/Engine, it does not mean you will see all changes straight away. I have not yet worked out a solution for reloading Engines code on change.
-
-- If you are building on top of an older point release of Rails 3.x, you may need to update your `config/boot.rb` file. Because, older generated boot files overwrote the `BUNDLE_GEMFILE` environment variable, make sure your file looks [like this](https://github.com/rails/rails/blob/master/railties/lib/rails/generators/rails/app/templates/config/boot.rb).
+* This will not handle code reloading: just because you do not have to `bundle update` each time you want to pull in the latest version of your library/Engine, it does not mean you will see all changes straight away. I have not yet worked out a solution for reloading Engines code on change.
+* If you are building on top of an older point release of Rails 3.x, you may need to update your `config/boot.rb` file. Because, older generated boot files overwrote the `BUNDLE_GEMFILE` environment variable, make sure your file looks [like this](https://github.com/rails/rails/blob/master/railties/lib/rails/generators/rails/app/templates/config/boot.rb).
 
 ### A better fix
 
