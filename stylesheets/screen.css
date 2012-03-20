@@ -98,6 +98,8 @@ footer#colophon { clear: both; width: 12em; padding-top: 2em; }
 .post-content-wide h2 { padding-right: 64px; padding-top: 1em; }
 .post-content-wide:nth-child(2n+1) { clear: both; }
 .post-content-wide ul, .post-content-wide ol { padding-left: 64px; padding-right: 320px; }
+.post-content-wide .highlight { width: 57em; padding-right: 36px; margin-right: 0px; overflow: scroll; }
+.post-content-wide .highlight pre { padding-left: 64px; margin-right: 32px; }
 
 .meta-title h1 { padding-bottom: 1em; }
 
