@@ -8,7 +8,7 @@ tags:   [bundler, ruby]
 
 In so many ways, [Bundler](http://gembundler.com/) is a godsend. Yet, like all gems (forgive the wordplay), it is not without a few rough edges.
 
-While at the (absolutely fantastic) [Wroclaw.rb](http://wrocloverb.com/) last weekend, I finally took a moment to round up some of these issues into a [lightning talk](http://wrocloverb.alexbcoles.com/). Unfortunately, not having paced myself correctly I got cut off just before the final couple slides. So I resolved to reformulate the content into a blog post. A further **impetus** was a recent [gist](https://gist.github.com/2063855) by [Sven Fuchs](http://twitter.com/svenfuchs) (der [Travis CI](http://travis-ci.org/)- und Ruby I18n-Meister).
+While at the (absolutely fantastic) [Wroclaw.rb](http://wrocloverb.com/) last weekend, I finally took a moment to round up some of these issues into a [lightning talk](http://wrocloverb.alexbcoles.com/). Unfortunately, not having paced myself correctly I got cut off just before the final couple of slides. So I resolved to reformulate the content into a blog post. A further **impetus** was a recent [gist](https://gist.github.com/2063855) by [Sven Fuchs](http://twitter.com/svenfuchs) (der [Travis CI](http://travis-ci.org/)- und Ruby I18n-Meister).
 
 
 The aim of this article is to highlight a handful of — what I consider to be — the rough edges, and to proffer potential solutions/workarounds.
