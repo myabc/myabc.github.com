@@ -97,7 +97,7 @@ footer#colophon { clear: both; width: 12em; padding-top: 2em; }
 .post-content-wide pre { padding-left: 64px; margin-right: 32px; }
 .post-content-wide h2 { padding-right: 64px; padding-top: 1em; }
 .post-content-wide:nth-child(2n+1) { clear: both; }
-.post-content-wide ul { padding-left: 64px; }
+.post-content-wide ul, .post-content-wide ol { padding-left: 64px; }
 
 .meta-title h1 { padding-bottom: 1em; }
 
