@@ -13,7 +13,7 @@ While at the (absolutely fantastic) [Wroclaw.rb](http://wrocloverb.com/) last we
 
 The aim of this article is to highlight a handful of — what I consider to be — the rough edges, and to proffer potential solutions/workarounds.
 
-Perhaps surprisingly, something I am not going to feature in this article is the question of **performance** (i.e. that **infamous** `Fetching source index…` wait), as with the recent launch of Bundler 1.1 these issues are largely [resolved](http://patshaughnessy.net/2011/10/14/why-bundler-1-1-will-be-much-faster). If you have not upgraded, please do. Bundler uses semantic versioning and this release should be fully API-compatible with Bundler 1.0.x.
+Perhaps surprisingly, one thing I am not going to talk about is the issue of **performance** (in other words, that **infamous** `Fetching source index…` wait). With the recent launch of Bundler 1.1 you should notice [a big speedup](http://patshaughnessy.net/2011/10/14/why-bundler-1-1-will-be-much-faster). If you have not upgraded, please do. Bundler uses [semantic versioning](http://semver.org/) and this release should be fully API-compatible with Bundler 1.0.x.
 
 
 Here is my run down of **the top 3 Bundler pain points**:
