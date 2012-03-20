@@ -173,7 +173,7 @@ Two points to bear in mind when using this technique with Rails:
 
 ### A better fix
 
-A better fix is on its way. Just as I was finishing this article, the following [pull request](https://github.com/carlhuda/bundler/pull/1779) from [@josevalim] was merged. I have yet to dig through the code, and it will take some time until the feature is released, but it looks promising.
+A better fix is on its way. Just as I was finishing this article, the following [pull request](https://github.com/carlhuda/bundler/pull/1779) from [@josevalim] was merged. I have yet to dig through the code, and it will take some time until the feature is released, but what is there already looks promising.
 
 ## As a conclusion
 
