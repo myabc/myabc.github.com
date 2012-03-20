@@ -20,7 +20,7 @@ Here is my run down of **the top 3 Bundler pain points**:
 
 1. **Lack of optional groups**
 2. **Lack of overridable version dependencies**
-3. **Not being able to declaring a dependency more than once**
+3. **Not being able to declare a dependency more than once**
 
 
 ## 1. Lack of optional groups
@@ -87,7 +87,7 @@ My main argument is that a `gemspec` is not core application code, but instead m
 
 I would also encourage you to comment on (or perhaps even +1) this issue!
 
-## 3. Not being able to declaring a dependency more than once
+## 3. Not being able to declare a dependency more than once
 
 ### Use case
 
