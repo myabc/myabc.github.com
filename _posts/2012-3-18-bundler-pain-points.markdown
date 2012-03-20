@@ -58,6 +58,7 @@ group :postgres, optional: true do
 end
 {% endhighlight %}
 
+I would encourage you to +1 the proposal!
 
 ## 2. Lack of overridable version dependencies
 ### Use case
@@ -80,8 +81,11 @@ gem 'sass-rails' do
 end
 {% endhighlight %}
 
-This is not something the Bundler developers are considering adding in, they assert the fork and git dependency workflow works well. But I respectfully disagree.
-I would even encourage you to +1 this issue!
+Alas, this is not something the Bundler team are currently considering adding in, and as such, there is no code. The Bundler team assert that the fork and git dependency workflow works well, but for my development team, it's turned into a maintenance nightmare. 
+
+My argument is that a `gemspec` is not core application code, but instead metadata. As such there should be mechanism for easily overriding this metadata – and that this mechanism is not akin to (or as "bad as") monkey-patching.
+
+I would also encourage you to comment on (or perhaps even +1) this issue!
 
 ## 3. Not being able to declaring a dependency more than once
 
