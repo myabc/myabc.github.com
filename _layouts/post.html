@@ -15,14 +15,17 @@ if (location.href.match(/localhost/)) {
     <div class="meta-title">
       <h1>{{ page.title }}</h1>
     </div>
-    <div class="meta-date">
-      <p><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time></p>
-    </div>
   </header>
   <div class="post-content-wide">
     {{ content }}
+    <p>
+      &nbsp;
+    </p>
   </div>
-  <div class="post-content">
+  <div class="meta-date">
+    <p><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b, %Y" }}</time></p>
+  </div>
+  <div class="post-content-disqus">
     <div id="disqus_thread"></div>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>

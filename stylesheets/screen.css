@@ -39,7 +39,9 @@ h1 { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; 
 
 h2 { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 1.2em; line-height: 3em; }
 
-h3, h4, h5, h6 { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 1em; }
+h3, h4, h5, h6 { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 1em; line-height: 3em; }
+
+ul { list-style-type: square; }
 
 time { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 0.825em; }
 
@@ -54,12 +56,15 @@ header h1 { line-height: 1.5em; }
 .footer-right p a, .footer-right a a { font-size: 1em; line-height: 1.5em; }
 
 .paginator { text-align: right; }
+.paginator h3 { line-height: 0.75em; }
 .paginator h3 a { text-decoration: none; }
 
 header#site-header { width: 70.5em; margin: 0 auto; }
 
 header p { text-align: right; }
 header h1 { padding-top: 1em; }
+
+h3, h4, h5, h6 { padding-top: 1em; }
 
 .content-plus-menu { width: 70.5em; margin: 0 auto; }
 
@@ -72,18 +77,31 @@ section.content article.excerpt p, section.content article.excerpt time { paddin
 section.content article.excerpt h2 { padding-right: 32px; padding-top: 1em; }
 section.content article.excerpt:nth-child(2n+1) { clear: both; }
 
+.thumbnail { margin-left: 64px; }
+
 #space-header { float: left; width: 61.5em; }
 
 #content-header { float: left; width: 7.5em; }
 
-.square-menu { margin-top: 2em; padding-left: 0.5em; padding-right: 0.5em; }
+.square-menu { margin-top: 2em; padding-left: 0.5em; padding-right: 0.5em; padding-bottom: 1em; }
 .square-menu h2 { padding-top: 1em; padding-bottom: 0.5em; }
 
 .footer-right { width: 7.5em; margin-top: 2em; padding-left: 0em; padding-right: 1em; }
 
 .paginator { width: 57em; float: left; margin-top: 2em; padding: 2em; }
 
-footer#colophon { clear: both; width: 70.5em; padding-top: 2em; }
+footer#colophon { clear: both; width: 12em; padding-top: 2em; }
+
+.post-content-wide { float: left; overflow: hidden; width: 61.5em; }
+.post-content-wide p, .post-content-wide time { padding-left: 64px; padding-right: 320px; }
+.post-content-wide pre { padding-left: 64px; margin-right: 32px; }
+.post-content-wide h2 { padding-right: 64px; padding-top: 1em; }
+.post-content-wide:nth-child(2n+1) { clear: both; }
+.post-content-wide ul { padding-left: 64px; }
+
+.meta-title h1 { padding-bottom: 1em; }
+
+.post-content-disqus { margin-top: 3em; padding-left: 64px; width: 34.5em; float: left; }
 
 /*  An easy way to zoom your entire layout in or out (as long as it's set in ems). Just change the media queries to activate them. Assuming your base font-size is 16: - the first one zooms out by a factor of (16-2)/16 = 0.875 - the second one zooms in by a factor of (16+2)/16 = 1.125 */
 a:link { color: black; }
@@ -93,7 +111,7 @@ a:visited { color: #666666; }
 h1, h2 { color: #dc143c; }
 h1 a:link, h1 a:visited, h2 a:link, h2 a:visited { color: inherit; text-decoration: none; }
 
-time { color: #334455; border-bottom: 1px solid #dc143c; }
+time { color: #334455; border-bottom: 3px solid #dc143c; }
 
 ::selection { background: #dc143c; color: white; }
 
@@ -119,11 +137,11 @@ header p { color: #334455; }
 
 .paginator h3 a, .paginator h3 a:visited { color: #334455; }
 
-footer#colophon p { background: #dc143c; }
+footer#colophon { border-bottom: 3px solid #dc143c; }
 
-code { background-color: #eeeeee; border: 1px solid #cccccc; }
+code { background-color: #eeeeff; }
 
-pre, div.highlight pre { background-color: #eeeeee; border: 1px solid #cccccc; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; padding: 5px; overflow: scroll; }
+pre, div.highlight pre { background-color: #eeeeff; border-left: 3px solid #dc143c; padding: 5px; overflow: scroll; }
 pre > code, div.highlight pre > code { border: none; }
 
 #links-menu ul { margin: 0; padding: 0; border: 0; overflow: hidden; *zoom: 1; }
