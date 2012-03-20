@@ -49,6 +49,14 @@ footer#colophon p { font-size: 0.825em; }
 .square-menu p { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 0.825em; color: white; }
 .square-menu p a, .square-menu p a:hover, .square-menu p a:visited { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 1em; color: white; text-decoration: none; }
 
+header p { font-family: "ff-meta-web-pro-condensed-1", "ff-meta-web-pro-condensed-2"; font-size: 1em; text-align: right; }
+header h1 { line-height: 1.5em; padding-top: 1em; }
+
+footer { padding-top: 2em; }
+
+.paginator { text-align: right; }
+.paginator h3 a { text-decoration: none; }
+
 header#site-header, footer#colophon { width: 70.5em; margin: 0 auto; }
 
 .content-plus-menu { width: 70.5em; margin: 0 auto; }
