@@ -141,8 +141,8 @@ footer#colophon { border-bottom: 3px solid #dc143c; }
 
 code { background-color: #eeeeff; }
 
-pre, div.highlight pre { background-color: #eeeeff; border-left: 3px solid #dc143c; padding: 5px; overflow: scroll; }
-pre > code, div.highlight pre > code { border: none; }
+div.post-content-wide > pre, div.post-content-wide > div.highlight { background-color: #eeeeff; border-left: 3px solid #dc143c; padding-top: 5px; padding-bottom: 5px; overflow: auto; }
+div.post-content-wide > pre > code, div.post-content-wide > div.highlight > code { border: none; }
 
 #links-menu ul { margin: 0; padding: 0; border: 0; overflow: hidden; *zoom: 1; }
 #links-menu ul > li { list-style-image: none; list-style-type: none; margin-left: 0; display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; white-space: nowrap; }

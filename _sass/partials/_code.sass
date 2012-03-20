@@ -4,12 +4,15 @@ code
   background-color: $lightgray
   //border-left: 1px solid $crimson
 
-pre,
-div.highlight pre
+
+// TODO: Clean this up.
+div.post-content-wide > pre,
+div.post-content-wide > div.highlight
   background-color: $lightgray
   border-left: 3px solid $crimson
-  padding: 5px
-  overflow: scroll
+  padding-top: 5px
+  padding-bottom: 5px
+  overflow: auto
 
   > code
     border: none
