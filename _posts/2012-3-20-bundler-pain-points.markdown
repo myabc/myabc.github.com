@@ -116,12 +116,12 @@ Create more than one `Gemfile`, where you want to use different versions or a sp
 I have seen this solution used by [Ripple](http://seancribbs.com/ripple/), for example:
 
 {% highlight ruby %}
-    # Taken from:
-    # https://github.com/seancribbs/ripple/blob/master/Gemfile.rails31
+# Taken from:
+# https://github.com/seancribbs/ripple/blob/master/Gemfile.rails31
 
-    gem 'activemodel', '~> 3.1.0'
+gem 'activemodel', '~> 3.1.0'
 
-    instance_eval File.read(File.expand_path('../Gemfile', __FILE__))
+instance_eval File.read(File.expand_path('../Gemfile', __FILE__))
 {% endhighlight %}
 
 where the `.gemspec` may contain,
@@ -160,11 +160,11 @@ of course you can wrap this into a shell function,
 Keeping more than one `Gemfile` is, of course, a big pain. So, use Rake to keep the copy in sync:
 
 {% highlight ruby %}
-    task :local_gemfile do
-      gemfile = File.read('Gemfile')
-      gemfile.gsub!(/git: ["']git@github\.com:payango\/([\w-]+)\.git["']/, 'path: \'../\1\'')
-      File.open('Gemfile.local', 'w') { |file| file.write(gemfile) }
-    end
+task :local_gemfile do
+  gemfile = File.read('Gemfile')
+  gemfile.gsub!(/git: ["']git@github\.com:payango\/([\w-]+)\.git["']/, 'path: \'../\1\'')
+  File.open('Gemfile.local', 'w') { |file| file.write(gemfile) }
+end
 {% endhighlight %}
 
 See the [gist](https://gist.github.com/2016633) for the full tasks.
