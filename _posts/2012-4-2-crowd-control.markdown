@@ -38,7 +38,7 @@ But when a community is crowd-sourcing directly with a freelancer, how will this
 
 This project will, inevitably, result in conflicting interests stemming from conflicting requirements. It could be anything from minutiae like the colour of the icon, to which plugins are bundled by default. For a foretaste of the problems that arise, you only have to look at the Rails and Bundler issue trackers. Rails and Bundler developers, on the other hands can turn around and say "I don't owe you fuck". Yehuda won't be able to do this.
 
-Whose interests will be prioritsed? Which funder? The one who paid the most?
+Whose interests will be prioritised? Which funder? The one who paid the most?
 
 ### 3. Money. Money. Money
 
