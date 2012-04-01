@@ -6,6 +6,8 @@ categories: code
 tags:   [bundler, ruby]
 ---
 
+## Crowd-sourcing meets open-source
+
 Something makes me deeply uncomfortable about [Yehuda Katz]'s ([@wycats]) recently announced [crowd-sourcing effort for rails.app](http://www.kickstarter.com/projects/1397300529/railsapp), and I've been trying to put my finger on it. To a certain extent, writing anything on the subject is a moot point. As of 2nd April, the target of $25,000 has been far exceeded. There is clearly interest (and money) in our industry for such a tool.
 
 
