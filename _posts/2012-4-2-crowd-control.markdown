@@ -6,9 +6,9 @@ categories: code
 tags:   [bundler, ruby]
 ---
 
-## Crowd-sourcing meets open-source
+## Crowd-funding meets open-source
 
-Something makes me deeply uncomfortable about [Yehuda Katz]'s ([@wycats]) recently announced [crowd-sourcing effort for rails.app](http://www.kickstarter.com/projects/1397300529/railsapp), and I have been trying to put my finger on it. To a certain extent, writing anything on the subject is a moot point. As of 2nd April, the target of $25,000 has been far exceeded. There is clearly interest (and money) in our industry for such a tool.
+Something makes me deeply uncomfortable about [Yehuda Katz]'s ([@wycats]) recently announced [crowd-funding effort for rails.app](http://www.kickstarter.com/projects/1397300529/railsapp), and I have been trying to put my finger on it. To a certain extent, writing anything on the subject is a moot point. As of 2nd April, the target of $25,000 has been far exceeded. There is clearly interest (and money) in our industry for such a tool.
 
 
 Nevertheless, I think [Eric Hodel] [@drbrain] is conflating points in his latest blog post ["On Community Funding of Open Source"](http://blog.segment7.net/2012/03/29/on-community-funding-of-open-source).
@@ -36,7 +36,7 @@ When an open-source project comes about organically, through the sweat and initi
 
 When a company sponsors the project, there is oversight in the sense that the company's profit imperative will usually keep the project somewhat on track.
 
-But when a community is crowd-sourcing directly with a freelancer, how will this process work in practice? The scepticism does not arise from a mistrust of Yehuda. Rather, it arises from the concern about how individual developers can protect themselves against potential fall out when crowd-sourced projects go wrong.
+But when a community is crowd-funding directly with a freelancer, how will this process work in practice? The scepticism does not arise from a mistrust of Yehuda. Rather, it arises from the concern about how individual developers can protect themselves against potential fall out when crowd-sourced projects go wrong.
 
 rails.app will, inevitably, result in conflicting interests stemming from differing requirements. It could be anything from _minutiae_ like the colour of the icon to the plugins bundled by default. For a foretaste of the problems that arise, you only have to look at the Rails and Bundler issue trackers. Their developers, on the other hand, can turn around and say "I don't owe you fuck". Yehuda won't be able to do this.
 
@@ -59,9 +59,9 @@ I also do not doubt the quality of his work. I would be happy to be half the pro
 
 Do I doubt we need something like rails.app? At the beginning, I was not sure if there would be demand, but I will admit, my mind has changed after participating in the discussion on Twitter.
 
-Yehuda deserves respect, and deserves to be paid a decent rate. I hope I have summed up some of the issues with the crowd-sourcing approach. If the community is taking on the role of investor, we must be more demanding. Yehuda is proposing a new model of funding open-source, and it is entirely right to criticise this process, in order to refine it.
+Yehuda deserves respect, and deserves to be paid a decent rate. I hope I have summed up some of the issues with the crowd-funding approach. If the community is taking on the role of investor, we must be more demanding. Yehuda is proposing a new model of funding open-source, and it is entirely right to criticise this process, in order to refine it.
 
-_As a footnote: this whole issue reminded me that the folks at Travis were due a little contribution from me. I was in the middle of an internal launch back when their crowd-sourcing started – read: living under a rock – and so it passed me by. I would encourage you to support an open-source project out there! Be it with cash donations or patches._
+_As a footnote: this whole issue reminded me that the folks at Travis were due a little contribution from me. I was in the middle of an internal launch back when their crowd-funding started – read: living under a rock – and so it passed me by. I would encourage you to support an open-source project out there! Be it with cash donations or patches._
 
 
 [Yehuda Katz]:http://yehudakatz.com/
