@@ -59,7 +59,7 @@ Do I doubt we need something like rails.app? At the beginning, I wasn't sure of 
 
 Yehuda deserves respect, and deserves to be paid a decent rate. But I hope I've summed up some of the issues with this approach. If the community is taking on the role of investor, then we must be more demanding. Yehuda is proposing a new model of funding open-source, and it is entirely right to criticise this process, in order to refine it.
 
-_As a footnote: this whole issue reminded me that the folks at Travis were due something from me. I was in the middle of an internal launch back when the crowd-sourcing started (read – living under a rock) and so it passed me by._
+_As a footnote: this whole issue reminded me that the folks at Travis were due a little contribution from me. I was in the middle of an internal launch back when the crowd-sourcing started (read – living under a rock) and so it passed me by. I'd encourage you to support an open-source project out there! Be it with cash donations or patches._
 
 
 [Yehuda Katz]:http://yehudakatz.com/
