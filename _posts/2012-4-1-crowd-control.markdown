@@ -6,36 +6,31 @@ categories: code
 tags:   [bundler, ruby]
 ---
 
-_(not intended to be an April fool's joke)_
-
-Something makes me deeply uncomfortable about [Yehuda Katz]'s ([@wycats]) recently announced [crowd-sourcing effort for rails.app](http://www.kickstarter.com/projects/1397300529/railsapp), and I've been trying to put my finger on it. To a certain extent, writing anything on the subject is a moot point. As of 1st April, the target of $25,000 has been far exceeded. There is clearly interest (and money) in our industry for such a tool.
+Something makes me deeply uncomfortable about [Yehuda Katz]'s ([@wycats]) recently announced [crowd-sourcing effort for rails.app](http://www.kickstarter.com/projects/1397300529/railsapp), and I've been trying to put my finger on it. To a certain extent, writing anything on the subject is a moot point. As of 2nd April, the target of $25,000 has been far exceeded. There is clearly interest (and money) in our industry for such a tool.
 
 
-But I think [Eric Hodel] is conflating points in his latest blog post ["On Community Funding of Open Source"](http://blog.segment7.net/2012/03/29/on-community-funding-of-open-source).
+Nevertheless, I think [Eric Hodel] is conflating points in his latest blog post ["On Community Funding of Open Source"](http://blog.segment7.net/2012/03/29/on-community-funding-of-open-source).
 
 Over the last week, there have been those that have expressed their dissatisfaction with the way Yehuda lead refactoring of Rails 3. There were doubts about whether he was the right person to do the job. And there have, indeed, been tweets that border on the obnoxious and insulting. If we end up resorting to personal attacks, then Eric is right to call people out on that.
 
-But, `sceptical != hater`. I am sceptical, and as such have found myself retweeting various opposing views.
+But, `sceptic != hater`. I am sceptical, and as such have found myself playing _agent provocateur_, retweeting various opposing views.
+
+So why am I uneasy?
 
 
-I cut my Ruby teeth on [Merb], a spectacularly engineered Ruby MVC Framework. I use [Bundler] constantly. I've played with [Janus] and [Thor]. I am currently building products with Rails 3 and [ember.js]. I am a great fan of Yehuda's work, and enormously grateful for the contribution that he has made to open-source. His work has enriched the Ruby community.
+It boils down to the following three reasons:
 
-I also do not doubt the quality of his work. I'd be happy if I were half the programmer Yehuda is. Some have said he has made Rails 3 overly complex. For my needs at least, Yehuda made Rails 3 viable.
+### 1. No proof of concept. No sweat.
 
+Yehuda is trying to appeal to a community of developers. Agile is popular in our community. We generally prefer to talk code, and not pour over Functional Requirement documents. A prototype, or proof of concept of some sorts would have be great.
 
-Do I doubt we need this? I thought the idea was good, but not necessarily worth the amount of investment billed, but I'll admit, my mind has been changed on this point.
+This takes place in the context of a community that often espouses bootstrapping. Travis has sweated before asking for crowd-sourced funding. Prominent Rubyists like Amy Hoy champion bootstrapping whole-heartedly.
 
-So why am I still uneasy? And why have I been playing _agent provocateur_ in my recent tweets?
+In the midst of this controversy, [Jeremy McAnally] ([@jm]) has already come up with [railcar], a proof of concept that implements some of parts of what Yehuda is proposing.
 
-For the following three reasons:
+### 2. Oversight
 
-* **No proof of concept. No sweat.** Yehuda is trying to appeal to a community of developers. Agile is popular in our community. We generally prefer to talk code, and not pour over Functional Requirement documents. A prototype, or proof of concept of some sorts would have be great.
-
-This takes place in the context of a community that often espouses bootstrapping. Travis has sweated before asking for crowd-sourced funding. Prominent Rubyists like Amy Hoy espouse bootstrapping whole-heartedly.
-
-In the midst of this controversy, [Jeremy McAnally] ([@jm]) has already come up with [railcar], a proof of concept somewhat along the lines of what Yehuda is proposing.
-
-* **Oversight:** When an open-source project comes about organically through the sweat and initiative of its founder, there is usualy no need for oversight. People will either use it or not. A common adage of proponents of liberal licenses like the MIT (X11) is "I don't owe you fuck".
+When an open-source project comes about organically through the sweat and initiative of its founder, there is usualy no need for oversight. People will either use it or not. A common adage of proponents of liberal licenses like the MIT (X11) is "I don't owe you fuck".
 
 When a company sponsors the project, there is oversight in the sense that the company's profit imperative will usually keep the project somewhat on track.
 
@@ -45,30 +40,40 @@ This project will, inevitably, result in conflicting interests stemming from con
 
 Whose interests will be prioritsed? Which funder? The one who paid the most?
 
-* **Money. Money. Money**: Probably the least salient of the three points, but I will mention it regardless. Here I could also easily be accused of _jealously_ (perhaps my own fault for not monetizing my own work as much as I should). But Yehuda is soliciting for work where he will be paid a substantial rate – $275 per hour. In some parts of the world this would fund an entire team.
+### 3. Money. Money. Money
+
+Probably the least salient of the three main points, but I will mention it regardless. Here I could also easily be accused of _jealously_ (perhaps my own fault for not monetizing my own work as much as I should). But Yehuda is soliciting for work where he will be paid a substantial rate – $275 per hour. In some parts of the world this would fund an entire team.
+
+### … and a couple open questions
+
+It is also important to consider what sort of precedent this will set for doing open-source. To what extent, will this detract from funding projects that are already established? [Rails Installer] was already planning a Mac version. If I were maintainer of [Ruby Installer], I'd imagine I'd feel just a little bit resentful after ploughing hundreds of personal hours into a product (fortunately I'm not the maintainer – and knowing [Luis Lavena] ([@luislavena]), he's far more cool than me).
+
+### A final note
+
+I cut my Ruby teeth on [Merb], a spectacularly engineered Ruby MVC Framework. I use [Bundler] constantly. I've played with [Janus] and [Thor]. I am currently building products with Rails 3 and [ember.js]. I am a great fan of Yehuda's work, and enormously grateful for the contribution that he has made to open-source. His work has enriched the Ruby community.
+
+I also do not doubt the quality of his work. I'd be happy if I were half the programmer Yehuda is. Some have said he has made Rails 3 overly complex. For my needs at least, Yehuda made Rails 3 viable.
 
 
-**tl;dr** [Brian Cardarella] ([@bcardarella]) sums up some of these issues even more succinctly:
+Do I doubt we need something like rails.app? At the beginning, I wasn't sure of the need, but I'll admit, my mind has been changed on the point by the discussion on Twitter.
 
-![Recent tweets by @bcardarella](/images/posts/bcardarella-tweets.png)
+Yehuda deserves respect, and deserves to be paid a decent rate. But I hope I've summed up some of the issues with this approach. If the community is taking on the role of investor, then we must be more demanding. Yehuda is proposing a new model of funding open-source, and it is entirely right to criticise this process, in order to refine it.
 
-
-Yehuda deserves respect, and deserves to be paid. But I hope I've summed up some of the issues with this approach. If the community is taking on the role of investor, then we should be more demanding. Yehuda is proposing a new model of funding open-source, and it is entirely right to criticise this process, to that it may be refined.
-
-
-As a footnote: this whole issue reminded me that the folks at Travis were due something from me. I was in the middle of an internal launch back when the crowd-sourcing started (read – living under a rock) and so it passed me by.
+_As a footnote: this whole issue reminded me that the folks at Travis were due something from me. I was in the middle of an internal launch back when the crowd-sourcing started (read – living under a rock) and so it passed me by._
 
 
 [Yehuda Katz]:http://yehudakatz.com/
 [@wycats]:https://twitter.com/#!/wycats
 [Eric Hodel]:http://blog.segment7.net/
+[Jeremy McAnally]:http://omgbloglol.com/
+[@jm]:https://twitter.com/#!/jm
+[railcar]:http://jeremymcanally.com/images/railcar.mov
+[Rails Installer]:http;//railsinstaller.org/
+[Ruby Installer]:http://rubyinstaller.org/
+[Luis Lavena]:http://blog.mmediasys.com/
+[@luislavena]:https://twitter.com/#!/jm
 [Merb]:http://www.merbivore.com/
 [Bundler]:https://github.com/carlhuda/bundler
 [Janus]:https://github.com/carlhuda/janus
 [Thor]:http://github.com/wycats/thor
 [ember.js]:http://emberjs.com/
-[Jeremy McAnally]:http://omgbloglol.com/
-[railcar]:http://jeremymcanally.com/images/railcar.mov
-[@jm]:https://twitter.com/#!/jm
-[Brian Cardarella]:http://bcardarella.com/
-[@bcardarella]:https://twitter.com/#!/bcardarella
