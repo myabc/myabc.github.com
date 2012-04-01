@@ -11,7 +11,7 @@ tags:   [bundler, ruby]
 Something makes me deeply uncomfortable about [Yehuda Katz]'s ([@wycats]) recently announced [crowd-sourcing effort for rails.app](http://www.kickstarter.com/projects/1397300529/railsapp), and I have been trying to put my finger on it. To a certain extent, writing anything on the subject is a moot point. As of 2nd April, the target of $25,000 has been far exceeded. There is clearly interest (and money) in our industry for such a tool.
 
 
-Nevertheless, I think [Eric Hodel] is conflating points in his latest blog post ["On Community Funding of Open Source"](http://blog.segment7.net/2012/03/29/on-community-funding-of-open-source).
+Nevertheless, I think [Eric Hodel] [@drbrain] is conflating points in his latest blog post ["On Community Funding of Open Source"](http://blog.segment7.net/2012/03/29/on-community-funding-of-open-source).
 
 Over the last week, there have been those that have expressed their dissatisfaction with the way Yehuda lead refactoring of Rails 3. There were doubts about whether he was the right person to do the job. And there have, indeed, been tweets that border on the obnoxious and insulting. If we end up resorting to personal attacks, then Eric is right to call people out on that.
 
@@ -67,6 +67,7 @@ _As a footnote: this whole issue reminded me that the folks at Travis were due a
 [Yehuda Katz]:http://yehudakatz.com/
 [@wycats]:https://twitter.com/#!/wycats
 [Eric Hodel]:http://blog.segment7.net/
+[@drbrain]:https://twitter.com/#!/drbrain
 [Travis CI]:http://travis-ci.org/
 [Amy Hoy]:twitter.com/#!/amyhoy
 [Jeremy McAnally]:http://omgbloglol.com/
