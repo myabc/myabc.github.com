@@ -24,7 +24,7 @@ It boils down to the following three reasons:
 
 Yehuda is trying to appeal to a community of developers. Agile is popular in our community. We generally prefer to talk code, and not pour over Functional Requirement documents. A prototype, or proof of concept of some sorts would have be great.
 
-This takes place in the context of a community that often espouses bootstrapping. Travis has sweated before asking for crowd-sourced funding. Prominent Rubyists like Amy Hoy champion bootstrapping whole-heartedly.
+This takes place in the context of a community that often espouses bootstrapping. The [Travis CI] developers sweated before asking for crowd-sourced funding. Prominent Rubyists like [Amy Hoy] champion bootstrapping whole-heartedly.
 
 In the midst of this controversy, [Jeremy McAnally] ([@jm]) has already come up with [railcar], a proof of concept that implements some of parts of what Yehuda is proposing.
 
@@ -65,6 +65,8 @@ _As a footnote: this whole issue reminded me that the folks at Travis were due s
 [Yehuda Katz]:http://yehudakatz.com/
 [@wycats]:https://twitter.com/#!/wycats
 [Eric Hodel]:http://blog.segment7.net/
+[Travis CI]:http://travis-ci.org/
+[Amy Hoy]:twitter.com/#!/amyhoy
 [Jeremy McAnally]:http://omgbloglol.com/
 [@jm]:https://twitter.com/#!/jm
 [railcar]:http://jeremymcanally.com/images/railcar.mov
