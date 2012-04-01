@@ -8,7 +8,7 @@ tags:   [bundler, ruby]
 
 ## Crowd-sourcing meets open-source
 
-Something makes me deeply uncomfortable about [Yehuda Katz]'s ([@wycats]) recently announced [crowd-sourcing effort for rails.app](http://www.kickstarter.com/projects/1397300529/railsapp), and I've been trying to put my finger on it. To a certain extent, writing anything on the subject is a moot point. As of 2nd April, the target of $25,000 has been far exceeded. There is clearly interest (and money) in our industry for such a tool.
+Something makes me deeply uncomfortable about [Yehuda Katz]'s ([@wycats]) recently announced [crowd-sourcing effort for rails.app](http://www.kickstarter.com/projects/1397300529/railsapp), and I have been trying to put my finger on it. To a certain extent, writing anything on the subject is a moot point. As of 2nd April, the target of $25,000 has been far exceeded. There is clearly interest (and money) in our industry for such a tool.
 
 
 Nevertheless, I think [Eric Hodel] is conflating points in his latest blog post ["On Community Funding of Open Source"](http://blog.segment7.net/2012/03/29/on-community-funding-of-open-source).
@@ -52,14 +52,14 @@ It is also important to consider what sort of precedent this will set for doing 
 
 ### A final note
 
-I cut my Ruby teeth on [Merb], a spectacularly engineered Ruby MVC Framework. I use [Bundler] constantly. I've played with [Janus] and [Thor]. I am currently building products with Rails 3 and [ember.js]. I am a great fan of Yehuda's work, and enormously grateful for the contribution that he has made to open-source. His work has enriched the Ruby community.
+I cut my Ruby teeth on [Merb], a spectacularly engineered Ruby MVC Framework. I use [Bundler] constantly. I have played with [Janus] and [Thor]. I am currently building products with Rails 3 and [ember.js]. I am a great fan of Yehuda's work, and enormously grateful for the contribution that he has made to open-source. His work has enriched the Ruby community.
 
 I also do not doubt the quality of his work. I'd be happy if I were half the programmer Yehuda is. Some have said he has made Rails 3 overly complex. For my needs at least, Yehuda made Rails 3 viable.
 
 
 Do I doubt we need something like rails.app? At the beginning, I wasn't sure of the need, but I'll admit, my mind has been changed on the point by the discussion on Twitter.
 
-Yehuda deserves respect, and deserves to be paid a decent rate. But I hope I've summed up some of the issues with this approach. If the community is taking on the role of investor, then we must be more demanding. Yehuda is proposing a new model of funding open-source, and it is entirely right to criticise this process, in order to refine it.
+Yehuda deserves respect, and deserves to be paid a decent rate. But I hope I have summed up some of the issues with this approach. If the community is taking on the role of investor, then we must be more demanding. Yehuda is proposing a new model of funding open-source, and it is entirely right to criticise this process, in order to refine it.
 
 _As a footnote: this whole issue reminded me that the folks at Travis were due a little contribution from me. I was in the middle of an internal launch back when the crowd-sourcing started (read – living under a rock) and so it passed me by. I'd encourage you to support an open-source project out there! Be it with cash donations or patches._
 
