@@ -69,7 +69,7 @@ _As a footnote: this whole issue reminded me that the folks at Travis were due a
 [Eric Hodel]:http://blog.segment7.net/
 [@drbrain]:https://twitter.com/#!/drbrain
 [Travis CI]:http://travis-ci.org/
-[Amy Hoy]:twitter.com/#!/amyhoy
+[Amy Hoy]:https://twitter.com/#!/amyhoy
 [Jeremy McAnally]:http://omgbloglol.com/
 [@jm]:https://twitter.com/#!/jm
 [railcar]:http://jeremymcanally.com/images/railcar.mov
