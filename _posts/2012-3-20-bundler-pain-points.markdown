@@ -192,4 +192,4 @@ _What are your pain points?_
 
 [@FooBarWidget]:https://github.com/FooBarWidget
 [@mislav]:https://github.com/mislav
-[@josevalim]:(http://github.com/josevalim)
+[@josevalim]:http://github.com/josevalim
