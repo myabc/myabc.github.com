@@ -36,7 +36,7 @@ pursuit of some generalised catharsis.
 
 For me, the fewer distractions the better. The next best thing to a piece of
 paper (or even better, a Clairefontaine notebook), is a simple text editor (such
-as [http://macromates.com/](TextMate)) using with a fixed-width typeface.
+as [TextMate](http://macromates.com/) using with a fixed-width typeface.
 
 Don't get me wrong. I don't necessarily long the days of typewritten documents,
 or everything in Courrier New. But the WYSIWYG (what-you-see-is-what-you-get) of
