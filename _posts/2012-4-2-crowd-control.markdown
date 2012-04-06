@@ -73,7 +73,7 @@ _As a footnote: this whole issue reminded me that the folks at Travis were due a
 [Jeremy McAnally]:http://omgbloglol.com/
 [@jm]:https://twitter.com/#!/jm
 [railcar]:http://jeremymcanally.com/images/railcar.mov
-[Rails Installer]:http;//railsinstaller.org/
+[Rails Installer]:http://railsinstaller.org/
 [Ruby Installer]:http://rubyinstaller.org/
 [Luis Lavena]:http://blog.mmediasys.com/
 [@luislavena]:https://twitter.com/#!/jm
