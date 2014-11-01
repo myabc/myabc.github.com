@@ -9,5 +9,4 @@ gem 'github-pages', versions['github-pages']
 group :development do
   gem 'rdiscount'
   gem 'compass',  '~> 1.0.1'
-  gem 'compass-blueprint'
 end
