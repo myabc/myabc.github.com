@@ -5,4 +5,4 @@ group :development do
   gem 'compass',  '~> 0.12.1'
 end
 
-gem 'jekyll'
+gem 'jekyll', '~> 2.4'
