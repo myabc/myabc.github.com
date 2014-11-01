@@ -1,5 +1,4 @@
-safe:       true
-auto:       true
-pygments:   true
-paginate:   6
-markdown:   rdiscount
+safe:        true
+highlighter: pygments
+paginate:    6
+markdown:    rdiscount
