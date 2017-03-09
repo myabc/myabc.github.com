@@ -1,4 +1,4 @@
 safe:        true
-highlighter: pygments
+highlighter: rouge
 paginate:    6
 markdown:    rdiscount
